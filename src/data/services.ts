@@ -125,7 +125,7 @@ export const AWAAYA_CORE_OFFERS: CoreOffer[] = [
       "Mobilisation de l'écosystème multi-acteurs (entreprises, collectivités, ONG)",
       "Pilotage de programme PMO et reporting d'impact certifiable"
     ],
-    link: "/pilotage/programmes-rse-economie-circulaire"
+    link: "/pilotage"
   }
 ];
 
