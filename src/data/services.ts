@@ -32,7 +32,7 @@ export const AWAAYA_BRAND = {
     conseil:
       "Conseil : deux domaines, Croissance commerciale & expansion et Durabilité & responsabilité sociétale, comprenant cinq prestations.",
     pilotage:
-      "Pilotage de projets : transformations organisationnelles et numériques ; programmes RSE et économie circulaire.",
+      "Pilotage de projets : transformations organisationnelles et numériques.",
     formation:
       "Formation & mobilisation : gestion et développement des grands comptes (Key Account Management).",
   },
@@ -332,8 +332,8 @@ export const AWAAYA_SERVICES: ServiceDetail[] = [
     pillar: "CONSEIL",
     pillarLabel: "Conseil",
     domain: "Durabilité & responsabilité sociétale",
-    title: "Diagnostic RSE et stratégie de durabilité",
-    commercialTitle: "S3 : « Sustainable Market Entry » & Stratégie RSE",
+    title: "Diagnostic et stratégie de durabilité",
+    commercialTitle: "S3 : « Sustainable Market Entry » & Stratégie ESG",
     subtitle: "Sécuriser votre licence sociale d'opérer, prévenir les risques réputationnels et réussir votre implantation durable.",
     target: "Entreprises étrangères qui s’implantent en Afrique de l’Ouest et du Centre, et entreprises locales qui exportent vers des clients européens aux exigences ESG croissantes (CSRD, RDUE, chaîne de valeur durable).",
     challenges: "Les risques d'acceptabilité locale, de conformité environnementale et de chaîne d'approvisionnement peuvent bloquer une implantation ou disqualifier un exportateur face aux standards internationaux.",
@@ -350,7 +350,7 @@ export const AWAAYA_SERVICES: ServiceDetail[] = [
       "Feuille de route ESG de lancement sur 12 mois intégrée au business plan"
     ],
     duration: "6 à 8 semaines d'audit · Accompagnement sur 12 mois",
-    targetAudience: ["Entreprises internationales en implantation", "Exportateurs agricoles et industriels", "Opérateurs d'infrastructures", "Directions RSE & Juridiques"],
+    targetAudience: ["Entreprises internationales en implantation", "Exportateurs agricoles et industriels", "Opérateurs d'infrastructures", "Directions Durabilité & Juridiques"],
     faqs: [
       { q: "Qu'est-ce que la 'licence sociale d'opérer' ?", a: "C'est l'acceptation formelle et informelle de vos activités par les communautés locales, autorités et acteurs clés, indispensable pour éviter les blocages de chantiers ou les conflits sociaux." },
       { q: "Comment liez-vous le plan ESG au plan commercial ?", a: "Nous veillons à ce que les critères de durabilité soient un argument de différenciation pour remporter des appels d'offres et rassurer les bailleurs de fonds." }
@@ -426,8 +426,8 @@ export const AWAAYA_SERVICES: ServiceDetail[] = [
     pillar: "PILOTAGE",
     pillarLabel: "Pilotage de projets",
     domain: "Pilotage de projets",
-    title: "Programmes RSE et économie circulaire",
-    commercialTitle: "S4 : « Circular Economy Programs » (offre phare de durabilité)",
+    title: "Programmes de durabilité et économie circulaire",
+    commercialTitle: "S4 : « Circular Economy Programs » (offre phare d'économie circulaire)",
     subtitle: "Réduire vos coûts matières et déchets en concevant et pilotant des symbioses industrielles rentables.",
     target: "Industriels et entreprises de production, d’emballage et de matériaux (cimenteries, imprimeries, agroalimentaire, distribution) qui veulent réduire leurs coûts matières et leurs déchets, ou anticiper la réglementation.",
     challenges: "L'inflation des coûts des matières premières, l'accumulation de déchets industriels coûteux à traiter et le durcissement des normes écologiques imposent de réinventer les modèles de production.",
@@ -490,11 +490,11 @@ export const AWAAYA_SERVICES: ServiceDetail[] = [
     pillar: "FORMATION",
     pillarLabel: "Formation & mobilisation",
     domain: "Formation & mobilisation",
-    title: "RSE, sensibilisation et appropriation des pratiques",
-    commercialTitle: "Ateliers RSE & Appropriation des Pratiques Durables",
-    subtitle: "Acculturer managers et collaborateurs pour ancrer la responsabilité sociétale au cœur des décisions métiers.",
-    target: "Membres de Comités de Direction, Managers de proximité, Référents RSE désignés et équipes opérationnelles dans les secteurs industriels, bancaires et de services.",
-    challenges: "La démarche RSE reste stérile si elle n'est pas comprise, partagée et traduite en réflexes concrets par les équipes opérationnelles et les managers intermédiaires.",
+    title: "Sensibilisation et appropriation des pratiques durables",
+    commercialTitle: "Ateliers Durabilité & Appropriation des Pratiques",
+    subtitle: "Acculturer managers et collaborateurs pour ancrer la responsabilité et la durabilité au cœur des décisions métiers.",
+    target: "Membres de Comités de Direction, Managers de proximité, Référents Durabilité désignés et équipes opérationnelles dans les secteurs industriels, bancaires et de services.",
+    challenges: "La démarche de durabilité reste stérile si elle n'est pas comprise, partagée et traduite en réflexes concrets par les équipes opérationnelles et les managers intermédiaires.",
     steps: [
       { title: "Diagnostic de sensibilisation & freins internes", desc: "Mesure de la maturité des équipes et identification des réticences culturelles face aux nouveaux impératifs durables." },
       { title: "Ingénierie pédagogique contextualisée au marché africain", desc: "Création de modules immersifs basés sur les réalités professionnelles concrètes en Côte d'Ivoire et dans l'UEMOA." },
@@ -505,10 +505,10 @@ export const AWAAYA_SERVICES: ServiceDetail[] = [
       "Supports de formation modulaires et interactifs",
       "Guides pratiques des écogestes et de la gouvernance responsable",
       "Chartes d'engagement d'équipe opérationnelles",
-      "Attestations nominatives certifiantes de sensibilisation RSE"
+      "Attestations nominatives certifiantes de sensibilisation à la durabilité"
     ],
     duration: "Sessions d'1 à 2 jours (inter ou intra-entreprise)",
-    targetAudience: ["Comités de Direction", "Managers de proximité", "Référents RSE désignés", "Équipes opérationnelles"],
+    targetAudience: ["Comités de Direction", "Managers de proximité", "Référents Durabilité désignés", "Équipes opérationnelles"],
     faqs: [
       { q: "La formation peut-elle être organisée dans nos locaux ?", a: "Oui, nous animons des sessions intra-entreprises sur vos sites à Abidjan et dans les régions industrielles." }
     ],

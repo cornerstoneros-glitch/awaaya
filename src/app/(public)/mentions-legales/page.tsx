@@ -85,7 +85,7 @@ export default function MentionsLegalesPage() {
               </div>
               <div>
                 <strong className="text-gray-900 block font-semibold">Activité :</strong>
-                <span>Cabinet de conseil en stratégie, pilotage de projets, transition durable (RSE/ESG) et formation des dirigeants.</span>
+                <span>Cabinet de conseil en stratégie, pilotage de projets, transition durable et gouvernance ESG, formation des dirigeants.</span>
               </div>
               <div>
                 <strong className="text-gray-900 block font-semibold">Siège social :</strong>
@@ -173,7 +173,7 @@ export default function MentionsLegalesPage() {
 
           <div className="text-sm text-gray-600 space-y-4 leading-relaxed">
             <p>
-              L'ensemble des éléments constituant ce site internet (textes, méthodologies de conseil, matrices de diagnostic, logotypes, charte graphique, grilles d'évaluation RSE/ESG, codes sources, vidéos et photographies) sont la propriété exclusive du cabinet <strong className="text-gray-900">AWAAYA Consulting</strong> ou font l'objet d'un droit d'utilisation concédé, protégés par les conventions internationales et l'Accord de Bangui (OAPI).
+              L'ensemble des éléments constituant ce site internet (textes, méthodologies de conseil, matrices de diagnostic, logotypes, charte graphique, grilles d'évaluation Durabilité & ESG, codes sources, vidéos et photographies) sont la propriété exclusive du cabinet <strong className="text-gray-900">AWAAYA Consulting</strong> ou font l'objet d'un droit d'utilisation concédé, protégés par les conventions internationales et l'Accord de Bangui (OAPI).
             </p>
             <p>
               Toute reproduction, représentation, diffusion, adaptation ou exploitation totale ou partielle de ces contenus, par quelque procédé que ce soit, sans l'accord préalable écrit et exprès de la direction d'AWAAYA est strictement interdite et constituerait une contrefaçon sanctionnée par le Code de la propriété intellectuelle.

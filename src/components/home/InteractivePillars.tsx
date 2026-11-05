@@ -43,10 +43,10 @@ const PILLARS_CONFIG: PillarMeta[] = [
     number: "02",
     title: "Pilotage de projets",
     shortTitle: "Pilotage de projets",
-    tagline: "Transformations organisationnelles et numériques · Programmes RSE et économie circulaire",
-    description: "Pilotage de projets : transformations organisationnelles et numériques ; programmes RSE et économie circulaire.",
+    tagline: "Transformations organisationnelles et numériques",
+    description: "Pilotage de projets : transformations organisationnelles et numériques.",
     heroImage: "https://images.unsplash.com/photo-1573496799652-408c2ac9fe98?q=80&w=1000&auto=format&fit=crop",
-    badgeText: "2 Prestations de Pilotage"
+    badgeText: "Pilotage Opérationnel & PMO"
   },
   {
     key: "FORMATION",

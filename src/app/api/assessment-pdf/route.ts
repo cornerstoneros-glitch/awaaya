@@ -13,7 +13,7 @@ export async function POST(request: Request) {
 
     const isRse = assessmentType === "rse";
     const reportTitle = isRse
-      ? "Rapport d'Évaluation Flash : Maturité RSE & Stratégie ESG"
+      ? "Rapport d'Évaluation Flash : Maturité Durabilité & Stratégie ESG"
       : "Rapport d'Évaluation Flash : Efficacité Commerciale B2B & Grands Comptes";
 
     const reportCode = `AWY-EVAL-${Date.now().toString(36).toUpperCase()}`;

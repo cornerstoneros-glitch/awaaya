@@ -130,7 +130,7 @@ export default function PlanDuSitePage() {
               </li>
               <li className="pt-2 border-t border-gray-100">
                 <Link href="/auto-evaluation?type=rse" className="group flex items-center justify-between text-gray-700 hover:text-awaaya-forest font-semibold transition-colors">
-                  <span>Auto-évaluation RSE / ESG</span>
+                  <span>Auto-évaluation Durabilité & ESG</span>
                   <ArrowRight className="w-3.5 h-3.5 text-gray-400 group-hover:text-awaaya-forest transition-colors" />
                 </Link>
                 <p className="text-xs text-gray-500 mt-0.5">Test de maturité environnementale, sociale et de gouvernance.</p>
@@ -146,7 +146,7 @@ export default function PlanDuSitePage() {
           </div>
         </div>
 
-        {/* 3. ESPACE CLIENT & CADRE LÉGAL */}
+        {/* 3. CADRE LÉGAL & DÉONTOLOGIE */}
         <div className="bg-white rounded-3xl p-6 sm:p-7 border border-gray-200 shadow-xs flex flex-col justify-between">
           <div className="space-y-4">
             <div className="flex items-center gap-3 pb-3 border-b border-gray-100">
@@ -154,19 +154,12 @@ export default function PlanDuSitePage() {
                 <Scale className="w-5 h-5" />
               </div>
               <div>
-                <span className="text-[10px] font-black uppercase tracking-wider text-awaaya-forest">Réglementaire & Accès</span>
-                <h2 className="text-lg font-heading font-extrabold text-gray-900">Espace Privé & Légal</h2>
+                <span className="text-[10px] font-black uppercase tracking-wider text-awaaya-forest">Réglementaire</span>
+                <h2 className="text-lg font-heading font-extrabold text-gray-900">Cadre Légal & Déontologie</h2>
               </div>
             </div>
             <ul className="space-y-2.5 text-sm">
               <li>
-                <Link href="/espace-client/login" className="group flex items-center justify-between text-gray-700 hover:text-awaaya-forest font-semibold transition-colors">
-                  <span>Portail Espace Client</span>
-                  <ArrowRight className="w-3.5 h-3.5 text-gray-400 group-hover:text-awaaya-forest transition-colors" />
-                </Link>
-                <p className="text-xs text-gray-500 mt-0.5">Accès sécurisé pour le suivi des missions et jalons.</p>
-              </li>
-              <li className="pt-2 border-t border-gray-100">
                 <Link href="/mentions-legales" className="group flex items-center justify-between text-gray-700 hover:text-awaaya-forest font-semibold transition-colors">
                   <span>Mentions Légales</span>
                   <ArrowRight className="w-3.5 h-3.5 text-gray-400 group-hover:text-awaaya-forest transition-colors" />
@@ -178,7 +171,7 @@ export default function PlanDuSitePage() {
                   <span>Politique de Confidentialité</span>
                   <ArrowRight className="w-3.5 h-3.5 text-gray-400 group-hover:text-awaaya-forest transition-colors" />
                 </Link>
-                <p className="text-xs text-gray-500 mt-0.5">Protection des données personnelles (Conformité ARTCI / Loi 2013-450).</p>
+                <p className="text-xs text-gray-500 mt-0.5">Protection des données personnelles et droits d'accès.</p>
               </li>
             </ul>
           </div>

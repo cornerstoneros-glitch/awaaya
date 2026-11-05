@@ -147,7 +147,7 @@ export default function ContactPage() {
                 <label className="block text-xs font-semibold uppercase text-gray-700 mb-1.5">Objet de votre demande *</label>
                 <select className="w-full px-3.5 py-2.5 rounded-lg border border-gray-300 text-sm focus:outline-none focus:ring-2 focus:ring-awaaya-primary bg-white">
                   <option value="conseil-croissance">Conseil en Croissance Commerciale & Expansion</option>
-                  <option value="conseil-rse">Diagnostic RSE & Reporting ESG</option>
+                  <option value="conseil-rse">Diagnostic Durabilité & Reporting ESG</option>
                   <option value="pilotage">Pilotage de Projets & Économie Circulaire</option>
                   <option value="formation">Formation & Gestion des Grands Comptes</option>
                   <option value="autre">Autre échange institutionnel</option>

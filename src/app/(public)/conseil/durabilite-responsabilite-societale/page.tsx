@@ -19,7 +19,7 @@ import { AWAAYA_SERVICES } from "@/data/services";
 
 export const metadata: Metadata = {
   title: "Conseil : Durabilité & Responsabilité Sociétale | AWAAYA Abidjan",
-  description: "Stratégie RSE, Sustainable Market Entry (S3), due diligence ESG des distributeurs, alignement réglementaire (RDUE, CSRD, BRVM) et reporting extra-financier auditable à Abidjan.",
+  description: "Stratégie de durabilité, Sustainable Market Entry (S3), due diligence ESG des distributeurs, alignement réglementaire (RDUE, CSRD, BRVM) et reporting extra-financier auditable à Abidjan.",
 };
 
 export default function DurabiliteResponsabiliteSocietalePage() {
@@ -61,7 +61,7 @@ export default function DurabiliteResponsabiliteSocietalePage() {
               href="/diagnostic?domaine=durabilite-responsabilite-societale"
               className="inline-flex items-center gap-2 bg-white text-awaaya-forestDark hover:bg-gray-100 font-extrabold text-sm px-6 py-3.5 rounded-xl transition-all shadow-md"
             >
-              <span>Demander un cadrage RSE / ESG</span>
+              <span>Demander un cadrage Durabilité & ESG</span>
               <ArrowRight className="w-4 h-4 text-awaaya-forestDark" />
             </Link>
             <Link

@@ -109,7 +109,7 @@ export default function AboutPage() {
                   Pilotage de projets
                 </span>
                 <p className="text-xs text-gray-700 leading-relaxed font-medium">
-                  <strong>Transformations organisationnelles et numériques</strong> ; <strong>programmes RSE et économie circulaire</strong>.
+                  <strong>Transformations organisationnelles et numériques</strong>.
                 </p>
                 <div className="pt-1">
                   <Link href="/pilotage" className="text-xs font-bold text-awaaya-forest hover:underline inline-flex items-center gap-1">
@@ -124,7 +124,7 @@ export default function AboutPage() {
                   Formation & mobilisation
                 </span>
                 <p className="text-xs text-gray-700 leading-relaxed font-medium">
-                  <strong>Gestion et développement des grands comptes</strong> ; <strong>RSE, sensibilisation et appropriation des pratiques</strong>.
+                  <strong>Gestion et développement des grands comptes</strong>.
                 </p>
                 <div className="pt-1">
                   <Link href="/formation" className="text-xs font-bold text-awaaya-forest hover:underline inline-flex items-center gap-1">
@@ -365,7 +365,7 @@ export default function AboutPage() {
                     </li>
                     <li className="flex justify-between items-start gap-2">
                       <span className="text-gray-600">Programmes pilotés</span>
-                      <strong className="text-gray-900 font-bold text-right text-[11px]">Croissance • Transfo • Digital • RSE</strong>
+                      <strong className="text-gray-900 font-bold text-right text-[11px]">Croissance • Transfo • Digital • ESG</strong>
                     </li>
                     <li className="flex justify-between items-start gap-2">
                       <span className="text-gray-600">Gouvernance</span>
@@ -390,7 +390,7 @@ export default function AboutPage() {
                       <strong className="text-gray-900 font-extrabold text-sm text-right">3 programmes</strong>
                     </li>
                     <li className="flex justify-between items-start gap-2">
-                      <span className="text-gray-600">Rapports RSE & Impact</span>
+                      <span className="text-gray-600">Rapports ESG & Impact</span>
                       <strong className="text-gray-900 font-extrabold text-sm text-right">3 rapports</strong>
                     </li>
                     <li className="flex justify-between items-start gap-2">

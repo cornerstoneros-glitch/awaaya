@@ -33,8 +33,8 @@ export const TEST_PERSONAS: TestPersona[] = [
   {
     id: "persona-rse",
     name: "Amadou Koné",
-    role: "Directeur RSE & Développement Durable",
-    roleBadge: "Client RSE",
+    role: "Directeur Durabilité & ESG",
+    roleBadge: "Client ESG",
     organization: "Société Ivoirienne de Valorisation (SIV)",
     email: "a.kone@siv-ci.com",
     avatarInitials: "AK",

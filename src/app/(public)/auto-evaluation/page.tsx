@@ -168,7 +168,7 @@ const COMMERCIAL_QUESTIONS: Question[] = [
 
 function AutoEvaluationContent() {
   const searchParams = useSearchParams();
-  const initialType = searchParams.get("type") === "commercial" ? "commercial" : "rse";
+  const initialType = searchParams.get("type") === "rse" ? "rse" : "commercial";
 
   const [assessmentType, setAssessmentType] = useState<"rse" | "commercial">(initialType);
   const [currentIdx, setCurrentIdx] = useState(0);
@@ -307,7 +307,7 @@ function AutoEvaluationContent() {
                 }`}
               >
                 <Leaf className="w-4 h-4" />
-                <span>Test 1 : Maturité RSE & ESG</span>
+                <span>Test 1 : Maturité Durabilité & ESG</span>
               </button>
               <button
                 type="button"
@@ -420,7 +420,7 @@ function AutoEvaluationContent() {
                   {result.levelLabel}
                 </span>
                 <h2 className="text-2xl font-heading font-extrabold text-gray-900">
-                  {assessmentType === "rse" ? "Bilan de Maturité RSE & ESG" : "Bilan d'Efficacité Commerciale B2B"}
+                  {assessmentType === "rse" ? "Bilan de Maturité Durabilité & ESG" : "Bilan d'Efficacité Commerciale B2B"}
                 </h2>
                 <p className="text-sm text-gray-600 max-w-lg mx-auto">
                   {result.summaryText}
@@ -560,48 +560,31 @@ function AutoEvaluationContent() {
       </div>
 
       {/* ========================================================= */}
-      {/* MODULE VISUEL : COMPRENDRE LES 2 AXES D'ÉVALUATION */}
+      {/* MODULE VISUEL : COMPRENDRE LE CADRE D'ÉVALUATION */}
       {/* ========================================================= */}
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 mt-16">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 mt-16">
         <div className="text-center max-w-2xl mx-auto mb-8 space-y-2">
           <span className="text-xs font-extrabold uppercase tracking-widest text-awaaya-forest">
             Méthodologie & Référentiel
           </span>
           <h3 className="text-xl sm:text-2xl font-heading font-extrabold text-gray-900">
-            Comprendre nos deux axes d'évaluation flash
+            Comprendre notre cadre d'évaluation flash
           </h3>
           <p className="text-xs sm:text-sm text-gray-600">
-            Nos tests s'appuient sur les standards internationaux (GRI, CSRD, Salesforce B2B) adaptés aux réalités économiques ouest-africaines.
+            Nos diagnostics s'appuient sur les meilleures pratiques managériales et commerciales adaptées aux réalités économiques ouest-africaines.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
-          <div className="bg-white rounded-3xl p-6 sm:p-8 border border-gray-200 shadow-sm space-y-4">
-            <div className="relative rounded-2xl overflow-hidden h-44 border border-gray-100 shadow-xs">
-              <img 
-                src="https://images.unsplash.com/photo-1573497491208-6b1acb260507?q=85&w=800&auto=format&fit=crop" 
-                alt="Axe 1 : Maturité RSE & ESG" 
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-4">
-                <span className="text-xs font-bold text-white uppercase tracking-wider">Axe 01 · Durabilité & Gouvernance</span>
-              </div>
-            </div>
-            <h4 className="font-heading font-bold text-lg text-gray-900">Maturité RSE & Conformité ESG</h4>
-            <p className="text-xs text-gray-600 leading-relaxed">
-              Mesurez le degré de structuration de vos politiques environnementales, de gestion des déchets, de santé au travail et d'achats responsables avant tout audit externe.
-            </p>
-          </div>
-
+        <div className="max-w-xl mx-auto">
           <div className="bg-white rounded-3xl p-6 sm:p-8 border border-gray-200 shadow-sm space-y-4">
             <div className="relative rounded-2xl overflow-hidden h-44 border border-gray-100 shadow-xs">
               <img 
                 src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=85&w=800&auto=format&fit=crop" 
-                alt="Axe 2 : Efficacité Commerciale B2B" 
+                alt="Axe : Efficacité Commerciale B2B" 
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-4">
-                <span className="text-xs font-bold text-white uppercase tracking-wider">Axe 02 · Vente Complexe & KAM</span>
+                <span className="text-xs font-bold text-white uppercase tracking-wider">Axe Clé · Vente Complexe & KAM</span>
               </div>
             </div>
             <h4 className="font-heading font-bold text-lg text-gray-900">Efficacité Commerciale & Grands Comptes</h4>

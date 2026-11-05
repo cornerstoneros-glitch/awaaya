@@ -17,8 +17,8 @@ import {
 import { AWAAYA_SERVICES } from "@/data/services";
 
 export const metadata: Metadata = {
-  title: "Conseil Stratégique, Croissance Commerciale & RSE/ESG | AWAAYA Abidjan",
-  description: "Accompagnement stratégique des directions générales et comités de direction en Côte d'Ivoire et Afrique de l'Ouest : audit commercial, expansion panafricaine, feuille de route RSE et reporting ESG.",
+  title: "Conseil Stratégique, Croissance Commerciale & ESG | AWAAYA Abidjan",
+  description: "Accompagnement stratégique des directions générales et comités de direction en Côte d'Ivoire et Afrique de l'Ouest : audit commercial, expansion panafricaine, feuille de route durabilité et reporting ESG.",
 };
 
 export default function ConseilPage() {
@@ -98,7 +98,7 @@ export default function ConseilPage() {
           </div>
           <div className="bg-white p-6 rounded-3xl border border-gray-200 shadow-xs text-center space-y-1">
             <p className="text-3xl sm:text-4xl font-heading font-black text-awaaya-forest">100%</p>
-            <p className="text-xs font-bold text-gray-700 uppercase tracking-wider">Alignement RSE / GRI</p>
+            <p className="text-xs font-bold text-gray-700 uppercase tracking-wider">Alignement ESG / GRI</p>
             <p className="text-[11px] text-gray-500">Standards internationaux adaptés aux réalités africaines</p>
           </div>
           <div className="bg-white p-6 rounded-3xl border border-gray-200 shadow-xs text-center space-y-1">
@@ -273,7 +273,7 @@ export default function ConseilPage() {
                   Domaine 2 : Durabilité & responsabilité sociétale
                 </h3>
                 <p className="text-xs text-gray-500 font-medium">
-                  2 prestations d'excellence pour structurer votre feuille de route RSE et publier un reporting ESG auditable.
+                  2 prestations d'excellence pour structurer votre feuille de route durabilité et publier un reporting ESG auditable.
                 </p>
               </div>
             </div>
@@ -381,7 +381,7 @@ export default function ConseilPage() {
                       href={`/diagnostic?prestation=${service.slug}`}
                       className="text-xs font-bold text-awaaya-forest hover:underline"
                     >
-                      Demander un diagnostic RSE
+                      Demander un diagnostic Durabilité & ESG
                     </Link>
                     <Link
                       href={`/prestations/${service.slug}`}

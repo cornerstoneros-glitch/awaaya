@@ -41,7 +41,7 @@ const INITIAL_LEADS: LeadItem[] = [
     source: "RSE_ASSESSMENT",
     score: 62,
     status: "QUALIFIED",
-    message: "Demande de rapport complet RSE et accompagnement sur la traçabilité des régimes de palme.",
+    message: "Demande de rapport complet Durabilité & ESG et accompagnement sur la traçabilité des régimes de palme.",
     createdAt: new Date(Date.now() - 3600000 * 4).toISOString(),
   },
   {

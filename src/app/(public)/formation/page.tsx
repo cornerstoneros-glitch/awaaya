@@ -18,7 +18,7 @@ import { AWAAYA_SERVICES } from "@/data/services";
 
 export const metadata: Metadata = {
   title: "Formation & Mobilisation des Talents — Executive Education | AWAAYA Abidjan",
-  description: "Formations certifiantes pour dirigeants, directions commerciales et managers à Abidjan : Key Account Management (KAM), appropriation des pratiques RSE/ESG et conduite du changement.",
+  description: "Formations certifiantes pour dirigeants, directions commerciales et managers à Abidjan : Key Account Management (KAM), négociation complexe et conduite du changement.",
 };
 
 export default function FormationPage() {

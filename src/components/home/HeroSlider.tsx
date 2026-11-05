@@ -137,7 +137,7 @@ export const HERO_SLIDES: HeroSlide[] = [
     headlinePrefix: "Sécuriser vos transformations et armer vos forces pour",
     headlineHighlight: "L'Excellence Commerciale",
     headlineSuffix: ".",
-    description: "Notre réseau de directeurs de projets PMO seniors et de formateurs certifiés sécurise l'exécution de vos chantiers et professionnalise vos équipes grands comptes et RSE dans la négociation complexe auprès des comités de direction.",
+    description: "Notre réseau de directeurs de projets PMO seniors et de formateurs certifiés sécurise l'exécution de vos chantiers et professionnalise vos équipes grands comptes dans la négociation complexe auprès des comités de direction.",
     metricValue: "94%",
     metricLabel: "Respect des Jalons PMO",
     metricDescription: "Rigueur d'exécution et montée en puissance des équipes commerciales dans la négociation à fort enjeu.",

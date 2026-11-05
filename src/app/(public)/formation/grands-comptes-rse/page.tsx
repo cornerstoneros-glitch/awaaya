@@ -84,7 +84,7 @@ export default function GrandsComptesRseFormationPage() {
           <ChevronRight className="w-3.5 h-3.5" />
           <Link href="/formation" className="hover:text-awaaya-forest transition-colors">Formation & mobilisation</Link>
           <ChevronRight className="w-3.5 h-3.5" />
-          <span className="text-gray-900 font-semibold">Grands comptes & RSE</span>
+          <span className="text-gray-900 font-semibold">Grands comptes & Négociation</span>
         </nav>
       </div>
 

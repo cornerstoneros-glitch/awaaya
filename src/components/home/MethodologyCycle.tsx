@@ -30,7 +30,7 @@ const METHOD_STEPS: MethodStep[] = [
     subtitle: "Comprendre l'existant sans concession",
     icon: Search,
     duration: "2 à 4 semaines",
-    description: "Immersion analytique complète : audit commercial, cartographie des parties prenantes, matrice de double matérialité RSE/ESG et évaluation des freins organisationnels.",
+    description: "Immersion analytique complète : audit commercial, cartographie des parties prenantes, matrice de double matérialité ESG et évaluation des freins organisationnels.",
     deliverables: ["Scorecard de maturité 360°", "Matrice de double matérialité", "Rapport d'audit des flux de ventes"],
     keyQuestion: "Où se situent vos poches réelles de rentabilité et vos vulnérabilités ESG ?"
   },
@@ -41,7 +41,7 @@ const METHOD_STEPS: MethodStep[] = [
     icon: FileSpreadsheet,
     duration: "3 à 4 semaines",
     description: "Alignement du Comité de Direction, arbitrage des priorités, modélisation budgétaire et définition des KPIs de rentabilité commerciale et d'impact extra-financier.",
-    deliverables: ["Plan d'Action Commercial (PAC) chiffré", "Feuille de route RSE à 3 ans", "Gouvernance et matrice RACI"],
+    deliverables: ["Plan d'Action Commercial (PAC) chiffré", "Feuille de route Durabilité à 3 ans", "Gouvernance et matrice RACI"],
     keyQuestion: "Quels sont les leviers prioritaires à fort retour sur investissement durable ?"
   },
   {

@@ -179,7 +179,7 @@ export function ClientTestimonials() {
                 { id: "ALL", label: "Tous les retours" },
                 { id: "EXPANSION", label: "Expansion & Market Entry" },
                 { id: "KAM", label: "Grands Comptes & KAM" },
-                { id: "DURABILITE", label: "RSE & Économie Circulaire" },
+                { id: "DURABILITE", label: "Durabilité & Économie Circulaire" },
               ].map((filter) => (
                 <button
                   key={filter.id}

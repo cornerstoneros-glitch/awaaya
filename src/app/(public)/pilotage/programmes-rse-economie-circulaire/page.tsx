@@ -19,7 +19,7 @@ import {
 import { AWAAYA_SERVICES } from "@/data/services";
 
 export const metadata: Metadata = {
-  title: "Pilotage : Programmes RSE & Économie Circulaire (S4) | AWAAYA Abidjan",
+  title: "Pilotage : Programmes de Durabilité & Économie Circulaire (S4) | AWAAYA Abidjan",
   description: "Offre phare de durabilité AWAAYA S4 : Diagnostic des flux matières et déchets, ingénierie de symbiose industrielle, consortium multi-acteurs et pilotage sur 6 à 18 mois pour cimenteries, imprimeries et agro-industries.",
 };
 
@@ -50,7 +50,7 @@ export default function ProgrammesRseEconomieCirculairePage() {
           </div>
 
           <h1 className="text-3xl sm:text-5xl lg:text-6xl font-heading font-extrabold text-white leading-tight max-w-4xl">
-            Pilotage : Programmes RSE & économie circulaire
+            Pilotage : Programmes de durabilité & économie circulaire
           </h1>
 
           <p className="text-gray-200 text-base sm:text-lg max-w-3xl leading-relaxed">
@@ -85,7 +85,7 @@ export default function ProgrammesRseEconomieCirculairePage() {
           <ChevronRight className="w-3.5 h-3.5" />
           <Link href="/pilotage" className="hover:text-awaaya-forest transition-colors">Pilotage de projets</Link>
           <ChevronRight className="w-3.5 h-3.5" />
-          <span className="text-gray-900 font-semibold">Programmes RSE & économie circulaire</span>
+          <span className="text-gray-900 font-semibold">Programmes de durabilité & économie circulaire</span>
         </nav>
       </div>
 

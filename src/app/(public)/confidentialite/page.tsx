@@ -159,7 +159,7 @@ export default function ConfidentialitePage() {
               </div>
               <div className="flex items-start gap-2.5">
                 <div className="w-1.5 h-1.5 rounded-full bg-awaaya-forest mt-2 flex-shrink-0" />
-                <p><strong>Génération des rapports d'auto-évaluation :</strong> calcul automatisé de votre score de maturité RSE/ESG ou commercial et envoi de la synthèse stratégique au format PDF.</p>
+                <p><strong>Génération des rapports d'auto-évaluation :</strong> calcul automatisé de votre score de maturité Durabilité/ESG ou commercial et envoi de la synthèse stratégique au format PDF.</p>
               </div>
               <div className="flex items-start gap-2.5">
                 <div className="w-1.5 h-1.5 rounded-full bg-awaaya-forest mt-2 flex-shrink-0" />

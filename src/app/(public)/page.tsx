@@ -80,11 +80,11 @@ export default function HomePage() {
                     Pilotage de projets
                   </span>
                   <span className="text-[11px] font-medium text-gray-600 bg-white px-2.5 py-0.5 rounded-md border border-gray-200">
-                    2 prestations
+                    1 prestation
                   </span>
                 </div>
                 <p className="text-xs text-gray-700 leading-relaxed font-normal">
-                  <strong>Transformations organisationnelles et numériques</strong> ; <strong>programmes RSE et économie circulaire</strong>.
+                  <strong>Transformations organisationnelles et numériques</strong>.
                 </p>
               </div>
 

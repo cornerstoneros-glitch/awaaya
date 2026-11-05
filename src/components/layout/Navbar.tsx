@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { ArrowRight, Menu, X, UserCheck, ShieldCheck } from "lucide-react";
+import { ArrowRight, Menu, X } from "lucide-react";
 
 export function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -31,7 +31,6 @@ export function Navbar() {
     { href: "/conseil", label: "Conseil" },
     { href: "/pilotage", label: "Pilotage" },
     { href: "/formation", label: "Formation" },
-    { href: "/etudes-de-cas", label: "Études de cas" },
     { href: "/auto-evaluation", label: "Auto-évaluation" },
     { href: "/contact", label: "Contact" },
   ];
@@ -77,12 +76,6 @@ export function Navbar() {
 
         {/* ACTIONS DESKTOP & BOUTON HAMBURGER MOBILE */}
         <div className="flex items-center gap-2 sm:gap-3 shrink-0 flex-nowrap">
-          <Link
-            href="/espace-client/login"
-            className="text-xs font-bold uppercase tracking-wider text-gray-700 hover:text-awaaya-forest hidden sm:inline-block border border-gray-300 px-3 xl:px-4 py-2 xl:py-2.5 rounded-xl hover:bg-gray-50 transition-all whitespace-nowrap shrink-0"
-          >
-            Espace Client
-          </Link>
           <Link
             href="/diagnostic"
             className="hidden md:inline-flex items-center gap-1.5 xl:gap-2 bg-awaaya-forest text-white text-xs xl:text-sm font-bold px-3.5 xl:px-5 py-2 xl:py-2.5 rounded-xl hover:bg-awaaya-forestDark transition-all shadow-sm whitespace-nowrap shrink-0"
@@ -138,15 +131,6 @@ export function Navbar() {
           </div>
 
           <div className="pt-6 border-t border-gray-200 space-y-3">
-            <Link
-              href="/espace-client/login"
-              onClick={() => setMobileMenuOpen(false)}
-              className="w-full flex items-center justify-center gap-2 border border-gray-300 py-3.5 px-4 rounded-xl font-heading font-bold text-sm text-gray-800 hover:bg-gray-50 transition-all"
-            >
-              <UserCheck className="w-4 h-4 text-awaaya-forest" />
-              <span>Accès Espace Client & Démo</span>
-            </Link>
-
             <Link
               href="/diagnostic"
               onClick={() => setMobileMenuOpen(false)}

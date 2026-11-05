@@ -270,7 +270,7 @@ export default function DiagnosticRequestPage() {
                         name="jobTitle"
                         value={formData.jobTitle}
                         onChange={handleChange}
-                        placeholder="Directrice Générale / Dir. RSE"
+                        placeholder="Directrice Générale / Dir. Développement Durable"
                         className="w-full px-3.5 py-2.5 rounded-lg border border-gray-300 text-sm focus:outline-none focus:ring-2 focus:ring-awaaya-primary"
                       />
                     </div>

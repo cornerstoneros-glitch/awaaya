@@ -33,8 +33,7 @@ export function Footer() {
               <li><Link href="/conseil/croissance-commerciale-expansion" className="hover:text-white transition-colors">Conseil : Croissance commerciale & expansion</Link></li>
               <li><Link href="/conseil/durabilite-responsabilite-societale" className="hover:text-white transition-colors">Conseil : Durabilité & responsabilité sociétale</Link></li>
               <li><Link href="/pilotage/transformations-organisationnelles-numeriques" className="hover:text-white transition-colors">Pilotage : Transformations organisationnelles & numériques</Link></li>
-              <li><Link href="/pilotage/programmes-rse-economie-circulaire" className="hover:text-white transition-colors">Pilotage : Programmes RSE & économie circulaire</Link></li>
-              <li><Link href="/formation/grands-comptes-rse" className="hover:text-white transition-colors">Formation & mobilisation : Grands comptes & RSE</Link></li>
+              <li><Link href="/formation/grands-comptes-rse" className="hover:text-white transition-colors">Formation & mobilisation : Grands comptes</Link></li>
             </ul>
           </div>
 
@@ -42,11 +41,10 @@ export function Footer() {
           <div className="space-y-3">
             <h4 className="text-white font-heading font-bold text-sm tracking-wider uppercase">Outils & Publications</h4>
             <ul className="space-y-2 text-sm text-awaaya-gray400">
-              <li><Link href="/etudes-de-cas" className="hover:text-white transition-colors">Études de Cas & Publications</Link></li>
               <li><Link href="/diagnostic" className="hover:text-white transition-colors">Demande de Diagnostic Flash</Link></li>
-              <li><Link href="/auto-evaluation?type=rse" className="hover:text-white transition-colors">Auto-évaluation RSE / ESG</Link></li>
+              <li><Link href="/auto-evaluation?type=rse" className="hover:text-white transition-colors">Auto-évaluation Durabilité & ESG</Link></li>
               <li><Link href="/auto-evaluation?type=commercial" className="hover:text-white transition-colors">Mini-diagnostic Commercial</Link></li>
-              <li><Link href="/espace-client/login" className="hover:text-white transition-colors">Portail Espace Client</Link></li>
+              <li><Link href="/contact" className="hover:text-white transition-colors">Prendre Rendez-vous</Link></li>
             </ul>
           </div>
 
@@ -70,9 +68,9 @@ export function Footer() {
           </div>
         </div>
 
-        {/* MENTIONS LÉGALES & CONFORMITÉ ARTCI */}
+        {/* MENTIONS LÉGALES & COPYRIGHT */}
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-awaaya-gray400 text-center md:text-left">
-          <p>© {new Date().getFullYear()} AWAAYA — Tous droits réservés. Conforme à la loi n° 2013-450 (Protection des données - ARTCI).</p>
+          <p>© {new Date().getFullYear()} AWAAYA — Tous droits réservés.</p>
           <div className="flex flex-wrap gap-4 sm:gap-6 justify-center md:justify-end">
             <Link href="/mentions-legales" className="hover:text-white transition-colors">Mentions Légales</Link>
             <Link href="/confidentialite" className="hover:text-white transition-colors">Politique de Confidentialité</Link>
