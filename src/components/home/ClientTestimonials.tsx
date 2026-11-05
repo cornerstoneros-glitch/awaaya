@@ -80,7 +80,7 @@ const TESTIMONIALS: Testimonial[] = [
     id: "telecom",
     author: "Bamba Lassina",
     role: "Directeur Exécutif B2B & Solutions Entreprises",
-    company: "Opérateur Télécoms Côte d'Ivoire (MTN Group)",
+    company: "Opérateur Télécoms Côte d'Ivoire",
     sector: "Télécoms, Cloud & Data",
     category: "KAM",
     categoryLabel: "Académie Grands Comptes & Vente B2B",
@@ -91,8 +91,6 @@ const TESTIMONIALS: Testimonial[] = [
 ];
 
 const CLIENT_PARTNERS = [
-  { name: "MTN Group", sector: "Télécoms & Infrastructures" },
-  { name: "ATOS", sector: "Digital & Cloud" },
   { name: "CIMPOR", sector: "Cimenteries & Matériaux" },
   { name: "Grafica Ivoire", sector: "Imprimerie & Packaging" },
   { name: "RMO Côte d'Ivoire", sector: "Ressources Humaines" },
@@ -141,7 +139,7 @@ export function ClientTestimonials() {
           </p>
 
           {/* Grille des badges entreprises */}
-          <div className="pt-4 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3">
+          <div className="pt-4 grid grid-cols-2 sm:grid-cols-4 gap-3">
             {CLIENT_PARTNERS.map((client, idx) => (
               <div 
                 key={idx}
