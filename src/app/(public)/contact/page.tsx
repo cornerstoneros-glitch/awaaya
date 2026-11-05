@@ -189,7 +189,7 @@ export default function ContactPage() {
             Interlocuteurs & Direction
           </span>
           <h2 className="text-2xl sm:text-3xl font-heading font-extrabold text-gray-900">
-            Un contact direct avec nos directeurs de missions
+            Un contact direct avec notre équipe d'experts
           </h2>
           <p className="text-xs sm:text-sm text-gray-600">
             Échangez sans intermédiaire avec des praticiens seniors engagés dans la réussite de vos projets en Côte d'Ivoire et dans la sous-région.
