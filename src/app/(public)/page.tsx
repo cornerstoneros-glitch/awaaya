@@ -94,11 +94,11 @@ export default function HomePage() {
                     Formation & mobilisation
                   </span>
                   <span className="text-[11px] font-medium text-gray-600 bg-white px-2.5 py-0.5 rounded-md border border-gray-200">
-                    2 programmes
+                    1 programme d'élite
                   </span>
                 </div>
                 <p className="text-xs text-gray-700 leading-relaxed font-normal">
-                  <strong>Gestion et développement des grands comptes</strong> ; <strong>RSE, sensibilisation et appropriation des pratiques</strong>.
+                  <strong>Gestion et développement des grands comptes</strong> (Key Account Management, vente de valeur et closing à fort enjeu).
                 </p>
               </div>
             </div>

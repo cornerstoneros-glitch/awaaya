@@ -53,10 +53,10 @@ const PILLARS_CONFIG: PillarMeta[] = [
     number: "03",
     title: "Formation & mobilisation",
     shortTitle: "Formation & mobilisation",
-    tagline: "Gestion et développement des grands comptes · RSE, sensibilisation et appropriation",
-    description: "Formation & mobilisation : gestion et développement des grands comptes ; RSE, sensibilisation et appropriation des pratiques.",
+    tagline: "Gestion et développement des grands comptes (Key Account Management)",
+    description: "Formation & mobilisation : gestion et développement des grands comptes B2B en Afrique de l'Ouest.",
     heroImage: "https://images.unsplash.com/photo-1531545514256-b1400bc00f31?q=80&w=1000&auto=format&fit=crop",
-    badgeText: "2 Formations Certifiantes"
+    badgeText: "Formation Exécutive Certifiante"
   }
 ];
 
@@ -65,7 +65,12 @@ export function InteractivePillars() {
   const [selectedServiceForModal, setSelectedServiceForModal] = useState<ServiceDetail | null>(null);
 
   const currentMeta = PILLARS_CONFIG.find((p) => p.key === activePillar)!;
-  const currentServices = AWAAYA_SERVICES.filter((s) => s.pillar === activePillar);
+  const currentServices = AWAAYA_SERVICES.filter(
+    (s) =>
+      s.pillar === activePillar &&
+      s.slug !== "programmes-rse-economie-circulaire" &&
+      s.slug !== "formation-sensibilisation-appropriation-rse"
+  );
 
   return (
     <section id="piliers-offre" className="py-20 bg-[#F4F6F4] text-gray-900 relative overflow-hidden border-b border-gray-200">

@@ -34,7 +34,7 @@ export const AWAAYA_BRAND = {
     pilotage:
       "Pilotage de projets : transformations organisationnelles et numériques ; programmes RSE et économie circulaire.",
     formation:
-      "Formation & mobilisation : gestion et développement des grands comptes ; RSE, sensibilisation et appropriation des pratiques.",
+      "Formation & mobilisation : gestion et développement des grands comptes (Key Account Management).",
   },
 };
 

@@ -110,60 +110,59 @@ export default function FormationPage() {
       </div>
 
       {/* ========================================================= */}
-      {/* PROGRAMMES & CATALOGUE DU PILIER FORMATION & MOBILISATION */}
-      {/* STRICTEMENT 2 FORMATIONS EXÉCUTIVES */}
+      {/* PROGRAMME DU PILIER FORMATION & MOBILISATION */}
       {/* ========================================================= */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-16 space-y-8">
         <div className="text-center max-w-3xl mx-auto space-y-3">
-          <span className="text-xs font-extrabold text-awaaya-forest uppercase tracking-wider">
+          <span className="text-xs font-semibold text-awaaya-forest">
             Organisation du Portefeuille
           </span>
-          <h2 className="text-2xl sm:text-4xl font-heading font-extrabold text-gray-900">
-            Formation & Mobilisation : Deux Programmes Certifiants
+          <h2 className="text-2xl sm:text-4xl font-heading font-bold text-gray-900">
+            Formation & Mobilisation : Gestion et Développement des Grands Comptes
           </h2>
           <p className="text-sm text-gray-600 leading-relaxed">
-            Formation & mobilisation : <strong>gestion et développement des grands comptes</strong> ; <strong>RSE, sensibilisation et appropriation des pratiques</strong>.
+            Formation & mobilisation : <strong>gestion et développement des grands comptes</strong> (Key Account Management & négociation commerciale complexe).
           </p>
           <div className="pt-1">
             <Link
               href="/formation/grands-comptes-rse"
-              className="inline-flex items-center gap-1.5 text-xs font-extrabold text-awaaya-forest hover:text-awaaya-forestDark transition-colors bg-awaaya-forestPale px-3.5 py-1.5 rounded-lg"
+              className="inline-flex items-center gap-1.5 text-xs font-semibold text-awaaya-forest hover:text-awaaya-forestDark transition-colors bg-awaaya-forestPale px-3.5 py-1.5 rounded-lg"
             >
-              <span>Page détaillée : Grands comptes & RSE</span>
+              <span>Page détaillée : Grands comptes</span>
               <ArrowRight className="w-3.5 h-3.5" />
             </Link>
           </div>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="max-w-3xl mx-auto w-full">
           
-          {/* PROGRAMME 1 : GESTION ET DÉVELOPPEMENT DES GRANDS COMPTES */}
-          <div className="bg-white rounded-3xl p-8 border border-gray-200 hover:border-awaaya-forest shadow-xs hover:shadow-lg transition-all duration-300 flex flex-col justify-between group space-y-6">
+          {/* PROGRAMME : GESTION ET DÉVELOPPEMENT DES GRANDS COMPTES */}
+          <div className="bg-white rounded-xl p-8 sm:p-10 border border-gray-200 hover:border-awaaya-forest shadow-xs hover:shadow-md transition-all duration-300 flex flex-col justify-between group space-y-6">
             <div className="space-y-4">
               {/* VIGNETTE VISUELLE PROGRAMME */}
-              <div className="relative rounded-2xl overflow-hidden h-44 border border-gray-100 shadow-xs">
+              <div className="relative rounded-xl overflow-hidden h-48 border border-gray-100 shadow-xs">
                 <img 
                   src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=85&w=800&auto=format&fit=crop" 
                   alt="Gestion et développement des grands comptes" 
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-4">
-                  <span className="text-[11px] font-bold text-white uppercase tracking-wider">Négociation Grands Comptes B2B · Abidjan</span>
+                  <span className="text-xs font-semibold text-white">Négociation Grands Comptes B2B · Abidjan</span>
                 </div>
               </div>
 
               <div className="flex items-center justify-between gap-2 text-xs">
-                <span className="font-extrabold text-awaaya-forest uppercase tracking-wider text-[11px] bg-awaaya-forestPale px-3 py-1 rounded-md">
+                <span className="font-semibold text-awaaya-forest uppercase tracking-wider text-xs bg-awaaya-forestPale px-3 py-1 rounded-md">
                   Formation & mobilisation
                 </span>
-                <span className="inline-flex items-center gap-1.5 text-gray-600 font-semibold bg-gray-100 px-2.5 py-1 rounded-md text-xs">
+                <span className="inline-flex items-center gap-1.5 text-gray-600 font-medium bg-gray-100 px-2.5 py-1 rounded-md text-xs">
                   <Clock className="w-3.5 h-3.5 text-awaaya-forest" />
                   <span>1 à 3 jours</span>
                 </span>
               </div>
 
               <div>
-                <h3 className="text-xl font-heading font-extrabold text-gray-900 group-hover:text-awaaya-forest transition-colors leading-snug mb-2">
+                <h3 className="text-xl sm:text-2xl font-heading font-bold text-gray-900 group-hover:text-awaaya-forest transition-colors leading-snug mb-2">
                   Gestion et développement des grands comptes
                 </h3>
                 <p className="text-sm text-gray-600 leading-relaxed">
@@ -172,7 +171,7 @@ export default function FormationPage() {
               </div>
 
               <div className="space-y-2 pt-2 border-t border-gray-100 text-xs text-gray-700">
-                <p className="font-bold text-gray-900">Points clés du programme :</p>
+                <p className="font-semibold text-gray-900">Points clés du programme :</p>
                 <div className="space-y-1.5">
                   <div className="flex items-start gap-2">
                     <CheckCircle2 className="w-3.5 h-3.5 text-awaaya-forest shrink-0 mt-0.5" />
@@ -191,77 +190,12 @@ export default function FormationPage() {
             </div>
 
             <div className="pt-4 border-t border-gray-100 flex items-center justify-between gap-4">
-              <span className="text-xs font-mono font-bold text-gray-500">Inter & Intra</span>
+              <span className="text-xs font-mono font-medium text-gray-500">Inter & Intra</span>
               <Link
                 href="/prestations/formation-grands-comptes-kam"
-                className="inline-flex items-center gap-1.5 text-xs font-extrabold bg-awaaya-forest text-white hover:bg-awaaya-forestDark transition-all px-4 py-2.5 rounded-xl shadow-xs"
+                className="inline-flex items-center gap-1.5 text-xs font-semibold bg-awaaya-forest text-white hover:bg-awaaya-forestDark transition-all px-4 py-2.5 rounded-lg shadow-xs"
               >
-                <span>Fiche détaillée</span>
-                <ArrowRight className="w-3.5 h-3.5" />
-              </Link>
-            </div>
-          </div>
-
-          {/* PROGRAMME 2 : RSE, SENSIBILISATION ET APPROPRIATION DES PRATIQUES */}
-          <div className="bg-white rounded-3xl p-8 border border-gray-200 hover:border-awaaya-forest shadow-xs hover:shadow-lg transition-all duration-300 flex flex-col justify-between group space-y-6">
-            <div className="space-y-4">
-              {/* VIGNETTE VISUELLE PROGRAMME */}
-              <div className="relative rounded-2xl overflow-hidden h-44 border border-gray-100 shadow-xs">
-                <img 
-                  src="https://images.unsplash.com/photo-1531482615713-2afd69097998?q=85&w=800&auto=format&fit=crop" 
-                  alt="RSE, sensibilisation et appropriation des pratiques" 
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-4">
-                  <span className="text-[11px] font-bold text-white uppercase tracking-wider">Atelier Pratique & Fresque RSE · UEMOA</span>
-                </div>
-              </div>
-
-              <div className="flex items-center justify-between gap-2 text-xs">
-                <span className="font-extrabold text-awaaya-forest uppercase tracking-wider text-[11px] bg-awaaya-forestPale px-3 py-1 rounded-md">
-                  Formation & mobilisation
-                </span>
-                <span className="inline-flex items-center gap-1.5 text-gray-600 font-semibold bg-gray-100 px-2.5 py-1 rounded-md text-xs">
-                  <Clock className="w-3.5 h-3.5 text-awaaya-forest" />
-                  <span>1 à 2 jours</span>
-                </span>
-              </div>
-
-              <div>
-                <h3 className="text-xl font-heading font-extrabold text-gray-900 group-hover:text-awaaya-forest transition-colors leading-snug mb-2">
-                  RSE, sensibilisation et appropriation des pratiques
-                </h3>
-                <p className="text-sm text-gray-600 leading-relaxed">
-                  Acculturer managers et collaborateurs aux enjeux de durabilité et ancrer les écogestes et la gouvernance responsable au cœur des pratiques opérationnelles.
-                </p>
-              </div>
-
-              <div className="space-y-2 pt-2 border-t border-gray-100 text-xs text-gray-700">
-                <p className="font-bold text-gray-900">Points clés du programme :</p>
-                <div className="space-y-1.5">
-                  <div className="flex items-start gap-2">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-awaaya-forest shrink-0 mt-0.5" />
-                    <span>Sensibilisation aux enjeux climat, biodiversité et normes RSE</span>
-                  </div>
-                  <div className="flex items-start gap-2">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-awaaya-forest shrink-0 mt-0.5" />
-                    <span>Fresques collaboratives & études de cas sectorielles africaines</span>
-                  </div>
-                  <div className="flex items-start gap-2">
-                    <CheckCircle2 className="w-3.5 h-3.5 text-awaaya-forest shrink-0 mt-0.5" />
-                    <span>Guides pratiques des écogestes et charte d'action par équipe</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="pt-4 border-t border-gray-100 flex items-center justify-between gap-4">
-              <span className="text-xs font-mono font-bold text-gray-500">Exécutif & Équipes</span>
-              <Link
-                href="/prestations/formation-rse-sensibilisation-pratiques"
-                className="inline-flex items-center gap-1.5 text-xs font-extrabold bg-awaaya-forest text-white hover:bg-awaaya-forestDark transition-all px-4 py-2.5 rounded-xl shadow-xs"
-              >
-                <span>Fiche détaillée</span>
+                <span>Fiche détaillée de la formation</span>
                 <ArrowRight className="w-3.5 h-3.5" />
               </Link>
             </div>

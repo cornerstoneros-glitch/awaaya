@@ -18,12 +18,14 @@ import {
 import { AWAAYA_SERVICES } from "@/data/services";
 
 export const metadata: Metadata = {
-  title: "Formation & Mobilisation : Grands Comptes & RSE | AWAAYA Abidjan",
-  description: "Masterclasses d'élite en Key Account Management (KAM), négociation complexe C-Level et appropriation des pratiques RSE / durabilité par notre réseau de consultants experts à Abidjan.",
+  title: "Formation & Mobilisation : Gestion et Développement des Grands Comptes | AWAAYA Abidjan",
+  description: "Masterclasses d'élite en Key Account Management (KAM), négociation complexe C-Level et vente de valeur par notre réseau de consultants experts à Abidjan.",
 };
 
 export default function GrandsComptesRseFormationPage() {
-  const services = AWAAYA_SERVICES.filter((s) => s.pillar === "FORMATION");
+  const services = AWAAYA_SERVICES.filter(
+    (s) => s.pillar === "FORMATION" && s.slug !== "formation-sensibilisation-appropriation-rse"
+  );
 
   return (
     <div className="min-h-screen bg-[#F4F6F4] text-gray-900 pb-24">
@@ -47,11 +49,11 @@ export default function GrandsComptesRseFormationPage() {
           </div>
 
           <h1 className="text-3xl sm:text-5xl lg:text-6xl font-heading font-extrabold text-white leading-tight max-w-4xl">
-            Formation & mobilisation : Grands comptes & RSE
+            Formation & mobilisation : Gestion et développement des grands comptes
           </h1>
 
           <p className="text-gray-200 text-base sm:text-lg max-w-3xl leading-relaxed">
-            Développer les compétences managériales, commerciales et durables qui font la différence. Notre <strong>réseau de consultants experts</strong> et praticiens seniors anime des masterclasses immersives et certifiantes conçues pour les directions générales, les Key Account Managers et les responsables d'impact en Afrique de l'Ouest.
+            Professionnaliser la négociation complexe, la vente de valeur et la posture stratégique Key Account Management (KAM) auprès des clients corporate et institutionnels. Notre <strong>réseau de consultants experts</strong> transmet les méthodologies éprouvées auprès des leaders du marché ouest-africain.
           </p>
 
           <div className="flex flex-wrap gap-4 pt-2">
@@ -115,26 +117,26 @@ export default function GrandsComptesRseFormationPage() {
       </div>
 
       {/* ========================================================= */}
-      {/* LES DEUX PROGRAMMES CERTIFIANTS DU PILIER */}
+      {/* PROGRAMME CERTIFIANT DU PILIER */}
       {/* ========================================================= */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-16 space-y-12">
         <div className="text-center max-w-3xl mx-auto space-y-3">
-          <span className="text-xs font-extrabold text-awaaya-forest uppercase tracking-wider">
+          <span className="text-xs font-semibold text-awaaya-forest">
             Catalogue Exécutif 2026
           </span>
-          <h2 className="text-2xl sm:text-4xl font-heading font-extrabold text-gray-900">
-            Deux Programmes d'Élite pour Muscler vos Équipes
+          <h2 className="text-2xl sm:text-4xl font-heading font-bold text-gray-900">
+            Programme d'Élite pour Muscler vos Forces Commerciales
           </h2>
           <p className="text-sm text-gray-600 leading-relaxed">
-            Formation & mobilisation : <strong>gestion et développement des grands comptes</strong> ; <strong>RSE, sensibilisation et appropriation des pratiques</strong>.
+            Formation & mobilisation : <strong>gestion et développement des grands comptes</strong> (Key Account Management B2B).
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="max-w-3xl mx-auto w-full">
           {services.map((service) => (
             <div
               key={service.slug}
-              className="bg-white rounded-3xl p-8 border border-gray-200 hover:border-awaaya-forest shadow-xs hover:shadow-xl transition-all duration-300 flex flex-col justify-between group space-y-6"
+              className="bg-white rounded-xl p-8 sm:p-10 border border-gray-200 hover:border-awaaya-forest shadow-xs hover:shadow-md transition-all duration-300 flex flex-col justify-between group space-y-6"
             >
               <div className="space-y-4">
                 <div className="flex items-center justify-between gap-2 text-xs">
