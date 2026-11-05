@@ -1,0 +1,31 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Next.js build and cache
+.next/
+out/
+build/
+
+# Local env files
+.env
+.env*.local
+
+# Logs and evaluation artifacts
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+.evals/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# TypeScript cache
+*.tsbuildinfo
+
+# SQLite databases
+*.db
+*.db-journal

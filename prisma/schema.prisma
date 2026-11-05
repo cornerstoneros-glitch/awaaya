@@ -1,0 +1,394 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+// ----------------------------------------------------
+// 1. UTILISATEURS, ORGANISATIONS & CONTRÔLE D'ACCÈS
+// ----------------------------------------------------
+
+enum Role {
+  VISITOR
+  CLIENT_USER
+  CLIENT_ADMIN
+  CONSULTANT
+  POLE_LEAD
+  AWAAYA_ADMIN
+}
+
+model Organization {
+  id                String       @id @default(cuid())
+  name              String
+  sector            String?
+  country           String       @default("Côte d'Ivoire")
+  city              String?      @default("Abidjan")
+  sizeRange         String?      // ex: "50-250 employés"
+  createdAt         DateTime     @default(now())
+  updatedAt         DateTime     @updatedAt
+
+  users             User[]
+  missions          Mission[]
+  assessments       Assessment[]
+
+  @@map("organizations")
+}
+
+model User {
+  id                String        @id @default(cuid())
+  email             String        @unique
+  passwordHash      String
+  firstName         String
+  lastName          String
+  phone             String?
+  role              Role          @default(CLIENT_USER)
+  mfaEnabled        Boolean       @default(false)
+  mfaSecret         String?
+  isActive          Boolean       @default(true)
+  
+  organizationId    String?
+  organization      Organization? @relation(fields: [organizationId], references: [id], onDelete: SetNull)
+
+  assignedMissions  Mission[]     @relation("ConsultantMissions")
+  actionsResponsible ActionItem[] @relation("ActionResponsible")
+  messages          Message[]
+  auditLogs         AuditLog[]
+  registrations     Registration[]
+
+  createdAt         DateTime      @default(now())
+  updatedAt         DateTime      @updatedAt
+
+  @@index([organizationId])
+  @@map("users")
+}
+
+// ----------------------------------------------------
+// 2. CONTENUS VITRINE & CATALOGUE PRESTATIONS
+// ----------------------------------------------------
+
+enum PillarType {
+  CONSEIL
+  PILOTAGE
+  FORMATION
+}
+
+model Domain {
+  id          String       @id @default(cuid())
+  slug        String       @unique
+  title       String
+  pillar      PillarType
+  description String
+  services    Service[]
+
+  @@map("domains")
+}
+
+model Service {
+  id            String       @id @default(cuid())
+  slug          String       @unique
+  title         String
+  subtitle      String?
+  domainId      String
+  domain        Domain       @relation(fields: [domainId], references: [id])
+  
+  challenges    String       @db.Text
+  steps         Json         // [{ title, desc }]
+  deliverables  String[]
+  durationText  String
+  targetAudience String[]
+  faqs          Json         // [{ q, a }]
+  
+  missions      Mission[]
+  leads         Lead[]
+
+  createdAt     DateTime     @default(now())
+  updatedAt     DateTime     @updatedAt
+
+  @@map("services")
+}
+
+model Article {
+  id            String       @id @default(cuid())
+  slug          String       @unique
+  title         String
+  summary       String
+  content       String       @db.Text
+  category      String       // ESG, RSE, Croissance, Grands Comptes
+  coverImage    String?
+  downloadUrl   String?
+  publishedAt   DateTime?
+  createdAt     DateTime     @default(now())
+
+  @@map("articles")
+}
+
+model CaseStudy {
+  id            String       @id @default(cuid())
+  title         String
+  sector        String
+  clientProfile String
+  challenge     String       @db.Text
+  solution      String       @db.Text
+  impactResults Json         // [{ metric: "+35%", label: "Chiffre d'affaires" }]
+  createdAt     DateTime     @default(now())
+
+  @@map("case_studies")
+}
+
+// ----------------------------------------------------
+// 3. FORMATIONS & SESSIONS
+// ----------------------------------------------------
+
+enum TrainingFormat {
+  INTER_ENTERPRISE
+  INTRA_ENTERPRISE
+}
+
+model TrainingSession {
+  id             String          @id @default(cuid())
+  title          String
+  theme          String
+  format         TrainingFormat
+  startDate      DateTime
+  endDate        DateTime
+  location       String          @default("Abidjan / Hybride")
+  maxSeats       Int             @default(15)
+  availableSeats Int
+  priceCFA       Int?
+  registrations  Registration[]
+
+  createdAt      DateTime        @default(now())
+  updatedAt      DateTime        @updatedAt
+
+  @@map("training_sessions")
+}
+
+model Registration {
+  id               String          @id @default(cuid())
+  sessionId        String
+  session          TrainingSession @relation(fields: [sessionId], references: [id])
+  userId           String?
+  user             User?           @relation(fields: [userId], references: [id])
+  
+  participantName  String
+  participantEmail String
+  companyName      String?
+  certificateUrl   String?
+  status           String          @default("CONFIRMED")
+
+  createdAt        DateTime        @default(now())
+
+  @@map("registrations")
+}
+
+// ----------------------------------------------------
+// 4. CONVERSION, LEADS & AUTO-ÉVALUATIONS
+// ----------------------------------------------------
+
+enum LeadStatus {
+  NEW
+  CONTACTED
+  QUALIFIED
+  PROPOSAL_SENT
+  CONVERTED
+  LOST
+}
+
+model Lead {
+  id           String      @id @default(cuid())
+  fullName     String
+  email        String
+  phone        String
+  organization String
+  sector       String?
+  size         String?
+  serviceId    String?
+  service      Service?    @relation(fields: [serviceId], references: [id])
+  timeframe    String?
+  message      String?
+  source       String      // "DIAGNOSTIC_FORM", "RSE_ASSESSMENT", "CONTACT"
+  status       LeadStatus  @default(NEW)
+  assignedTo   String?
+
+  assessmentId String?     @unique
+  assessment   Assessment? @relation(fields: [assessmentId], references: [id])
+
+  createdAt    DateTime    @default(now())
+  updatedAt    DateTime    @updatedAt
+
+  @@map("leads")
+}
+
+enum AssessmentType {
+  RSE_ESG
+  COMMERCIAL_MATURITY
+}
+
+model Assessment {
+  id             String         @id @default(cuid())
+  type           AssessmentType
+  organizationId String?
+  organization   Organization?  @relation(fields: [organizationId], references: [id])
+  
+  overallScore   Float
+  pillarScores   Json           // { "E": 65, "S": 80, "G": 55 }
+  responses      Json
+  pdfReportUrl   String?
+  
+  lead           Lead?
+  createdAt      DateTime       @default(now())
+
+  @@map("assessments")
+}
+
+// ----------------------------------------------------
+// 5. ESPACE CLIENT & SUIVI DES MISSIONS
+// ----------------------------------------------------
+
+enum MissionPhase {
+  DIAGNOSTIC
+  ACTION_PLAN
+  IMPLEMENTATION
+  MONITORING
+  COMPLETED
+}
+
+model Mission {
+  id              String        @id @default(cuid())
+  reference       String        @unique // ex: AWY-2026-001
+  title           String
+  organizationId  String
+  organization    Organization  @relation(fields: [organizationId], references: [id], onDelete: Cascade)
+  serviceId       String
+  service         Service       @relation(fields: [serviceId], references: [id])
+  
+  currentPhase    MissionPhase  @default(DIAGNOSTIC)
+  progressPercent Int           @default(0)
+  startDate       DateTime
+  targetEndDate   DateTime?
+
+  consultants     User[]        @relation("ConsultantMissions")
+  milestones      Milestone[]
+  actionItems     ActionItem[]
+  deliverables    Deliverable[]
+  indicators      Indicator[]
+  messages        Message[]
+
+  createdAt       DateTime      @default(now())
+  updatedAt       DateTime      @updatedAt
+
+  @@index([organizationId])
+  @@map("missions")
+}
+
+enum MilestoneStatus {
+  PENDING
+  IN_PROGRESS
+  VALIDATED
+  DELAYED
+}
+
+model Milestone {
+  id          String          @id @default(cuid())
+  missionId   String
+  mission     Mission         @relation(fields: [missionId], references: [id], onDelete: Cascade)
+  title       String
+  dueDate     DateTime
+  status      MilestoneStatus @default(PENDING)
+  deliverable Deliverable?
+
+  @@map("milestones")
+}
+
+enum ActionStatus {
+  TODO
+  IN_PROGRESS
+  DONE
+  BLOCKED
+}
+
+model ActionItem {
+  id            String       @id @default(cuid())
+  missionId     String
+  mission       Mission      @relation(fields: [missionId], references: [id], onDelete: Cascade)
+  title         String
+  responsibleId String?
+  responsible   User?        @relation("ActionResponsible", fields: [responsibleId], references: [id])
+  dueDate       DateTime
+  status        ActionStatus @default(TODO)
+  comments      String?      @db.Text
+
+  createdAt     DateTime     @default(now())
+  updatedAt     DateTime     @updatedAt
+
+  @@map("action_items")
+}
+
+model Deliverable {
+  id          String     @id @default(cuid())
+  missionId   String
+  mission     Mission    @relation(fields: [missionId], references: [id], onDelete: Cascade)
+  milestoneId String?    @unique
+  milestone   Milestone? @relation(fields: [milestoneId], references: [id])
+  title       String
+  fileUrl     String
+  version     Int        @default(1)
+  sizeBytes   Int?
+  uploadedAt  DateTime   @default(now())
+
+  @@map("deliverables")
+}
+
+model Indicator {
+  id          String         @id @default(cuid())
+  missionId   String
+  mission     Mission        @relation(fields: [missionId], references: [id], onDelete: Cascade)
+  name        String         // ex: "Émissions Carbone tCO2e" ou "Taux de conversion B2B"
+  category    String         // "ESG_ENV", "ESG_SOC", "COMMERCIAL"
+  unit        String         // "tCO2e", "%", "XOF"
+  targetValue Float?
+  entries     MetricEntry[]
+
+  @@map("indicators")
+}
+
+model MetricEntry {
+  id          String     @id @default(cuid())
+  indicatorId String
+  indicator   Indicator  @relation(fields: [indicatorId], references: [id], onDelete: Cascade)
+  date        DateTime
+  value       Float
+  sourceDoc   String?
+
+  @@map("metric_entries")
+}
+
+model Message {
+  id          String     @id @default(cuid())
+  missionId   String
+  mission     Mission    @relation(fields: [missionId], references: [id], onDelete: Cascade)
+  authorId    String
+  author      User       @relation(fields: [authorId], references: [id])
+  content     String     @db.Text
+  createdAt   DateTime   @default(now())
+
+  @@map("messages")
+}
+
+model AuditLog {
+  id          String     @id @default(cuid())
+  userId      String?
+  user        User?      @relation(fields: [userId], references: [id])
+  action      String
+  entityType  String
+  entityId    String
+  details     Json?
+  ipAddress   String?
+  timestamp   DateTime   @default(now())
+
+  @@map("audit_logs")
+}
+
