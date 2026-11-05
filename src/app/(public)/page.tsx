@@ -7,6 +7,7 @@ import { MethodologyCycle } from "@/components/home/MethodologyCycle";
 import { QuickAssessmentTeaser } from "@/components/home/QuickAssessmentTeaser";
 import { SectorsGrid } from "@/components/home/SectorsGrid";
 import { ClientTestimonials } from "@/components/home/ClientTestimonials";
+import { CoreOffersSection } from "@/components/home/CoreOffersSection";
 
 export default function HomePage() {
   return (
@@ -106,7 +107,10 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 3. ILS NOUS FONT CONFIANCE & TÉMOIGNAGES DE SATISFACTION */}
+      {/* 3. OFFRE DE SERVICES FONDATRICE (PPTX) : DEUX MOTEURS, 4 OFFRES & RÉSULTATS */}
+      <CoreOffersSection />
+
+      {/* 4. ILS NOUS FONT CONFIANCE & TÉMOIGNAGES DE SATISFACTION */}
       <ClientTestimonials />
 
       {/* 4. BENTO GRID D'IMPACT (FOND BLANC & GRIS PERLÉ, ACCENTS FORÊT) */}

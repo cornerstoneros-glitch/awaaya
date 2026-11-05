@@ -25,6 +25,9 @@ export const AWAAYA_BRAND = {
   operatingModel: "Réseau de consultants experts sectoriels et directeurs de mission chevronnés mobilisés sur mesure.",
   description:
     "AWAAYA est un cabinet de conseil, de transformation et de durabilité basé à Abidjan. S'appuyant sur un réseau de consultants experts sectoriels, directeurs de mission chevronnés et praticiens de haut niveau, le cabinet accompagne les organisations dans leur développement commercial, le pilotage de leurs transformations et la mise en œuvre de leur démarche de durabilité. Il intervient du diagnostic au suivi des actions, avec des prestations adaptées aux objectifs, aux ressources et aux contraintes du client.",
+  coreThesis:
+    "Les entreprises qui visent l’Afrique de l’Ouest et du Centre ont besoin de vendre, de fidéliser et de se conformer aux exigences ESG de leurs clients. AWAAYA relie ces trois besoins dans une offre unique.",
+  hub: "Un hub régional, bilingue français-anglais, au cœur de 13 marchés.",
   portfolioOverview: {
     conseil:
       "Conseil : deux domaines, Croissance commerciale & expansion et Durabilité & responsabilité sociétale, comprenant cinq prestations.",
@@ -34,6 +37,194 @@ export const AWAAYA_BRAND = {
       "Formation & mobilisation : gestion et développement des grands comptes ; RSE, sensibilisation et appropriation des pratiques.",
   },
 };
+
+export interface CoreOffer {
+  code: "OFFRE 1" | "OFFRE 2" | "OFFRE A" | "OFFRE B";
+  engine: "CROISSANCE" | "DURABILITE";
+  engineLabel: string;
+  name: string;
+  summary: string;
+  description: string;
+  format: string;
+  pricing: string;
+  pricingDetail: string;
+  deliverables: string[];
+  cofinancingNote?: string;
+  link: string;
+}
+
+export const AWAAYA_CORE_OFFERS: CoreOffer[] = [
+  {
+    code: "OFFRE 1",
+    engine: "CROISSANCE",
+    engineLabel: "Moteur Croissance",
+    name: "Africa Market Entry",
+    summary: "Étude pays, partenaires et distributeurs, plan commercial sur 12 mois, country manager externalisé.",
+    description: "Pour les éditeurs de logiciels, fintechs, cybersécurité et fabricants internationaux souhaitant vendre et s'implanter en Afrique de l'Ouest et Centrale en mode Country Manager externalisé, sans filiale lourde préalable.",
+    format: "Diagnostic, puis retainer et commission",
+    pricing: "Diagnostic 5 à 15 K€",
+    pricingDetail: "Tarif indicatif à valider selon la taille du client et le périmètre géographique.",
+    deliverables: [
+      "Étude pays et priorisation des marchés adressables",
+      "Qualification et contractualisation des partenaires et distributeurs",
+      "Plan commercial sur 12 mois avec rétroplanning d'exécution",
+      "Country Manager externalisé à temps partagé"
+    ],
+    link: "/conseil/croissance-commerciale-expansion"
+  },
+  {
+    code: "OFFRE 2",
+    engine: "CROISSANCE",
+    engineLabel: "Moteur Croissance",
+    name: "Key Account Management",
+    summary: "Audit de comptes, plans de compte, gestion déléguée de comptes clés, coaching des équipes locales.",
+    description: "Destiné aux entreprises technologiques et B2B disposant de comptes stratégiques en Afrique (opérateurs télécoms, banques, multinationales) nécessitant un pilotage exécutif de proximité pour maximiser la rentabilité.",
+    format: "Retainer mensuel par compte",
+    pricing: "Retainer mensuel",
+    pricingDetail: "Tarif indicatif au forfait mensuel par compte clé suivi.",
+    deliverables: [
+      "Audit de comptes et Power Mapping des décideurs C-Level",
+      "Plans de compte stratégiques (Account Plans) complets",
+      "Gestion déléguée de comptes clés en relation directe",
+      "Coaching des équipes locales et outillage CRM (Salesforce)"
+    ],
+    link: "/formation/grands-comptes-rse"
+  },
+  {
+    code: "OFFRE A",
+    engine: "DURABILITE",
+    engineLabel: "Moteur Durabilité",
+    name: "Sustainable Market Entry",
+    summary: "Due diligence ESG, cartographie des parties prenantes, plan ESG de lancement intégré au go-to-market.",
+    description: "Sécuriser votre licence sociale d'opérer, prévenir les risques réputationnels et réussir votre implantation durable face aux exigences réglementaires internationales (CSRD, RDUE, chaîne de valeur durable).",
+    format: "Module sur mission 1 ou diagnostic",
+    pricing: "3 à 10 K€",
+    pricingDetail: "Tarif indicatif selon la taille du client et l'envergure du projet d'implantation.",
+    deliverables: [
+      "Due diligence ESG des pays, distributeurs et sous-traitants",
+      "Cartographie d'engagement des parties prenantes locales",
+      "Matrice de prévention des risques réputationnels et de conformité",
+      "Plan ESG de lancement sur 12 mois intégré au business plan commercial"
+    ],
+    link: "/conseil/durabilite-responsabilite-societale"
+  },
+  {
+    code: "OFFRE B",
+    engine: "DURABILITE",
+    engineLabel: "Moteur Durabilité",
+    name: "Circular Economy Programs",
+    summary: "Diagnostic des flux de matières, projets de valorisation, écosystème multi-acteurs, pilotage de programme.",
+    description: "Accompagner les industriels, entreprises de production et collectivités dans la transformation de leurs flux de matières et déchets en leviers d'économies, de rentabilité et d'impact durable.",
+    format: "Diagnostic, puis pilotage de programme",
+    pricing: "Diagnostic puis pilotage",
+    pricingDetail: "Tarifs indicatifs à valider selon la taille du client. Les bailleurs peuvent cofinancer l'offre B.",
+    cofinancingNote: "Les bailleurs de fonds internationaux peuvent cofinancer l'offre B.",
+    deliverables: [
+      "Diagnostic complet des flux de matières et gisements de déchets",
+      "Études de faisabilité technique et économique de valorisation",
+      "Mobilisation de l'écosystème multi-acteurs (entreprises, collectivités, ONG)",
+      "Pilotage de programme PMO et reporting d'impact certifiable"
+    ],
+    link: "/pilotage/programmes-rse-economie-circulaire"
+  }
+];
+
+export const AWAAYA_VALUE_ENGINES = {
+  tagline: "Un cabinet, deux moteurs de valeur",
+  coreThesis: "Les entreprises qui visent l’Afrique de l’Ouest et du Centre ont besoin de vendre, de fidéliser et de se conformer aux exigences ESG de leurs clients. AWAAYA relie ces trois besoins dans une offre unique.",
+  hub: {
+    city: "Abidjan, Côte d'Ivoire",
+    label: "Ancrage Abidjan",
+    description: "Un hub régional, bilingue français-anglais, au cœur de 13 marchés africains stratégiques."
+  },
+  engines: [
+    {
+      id: "croissance",
+      title: "Croissance",
+      summary: "Entrer sur les marchés africains et piloter les comptes stratégiques.",
+      offers: ["OFFRE 1 : Africa Market Entry", "OFFRE 2 : Key Account Management"]
+    },
+    {
+      id: "durabilite",
+      title: "Durabilité",
+      summary: "Intégrer l’ESG et l’économie circulaire dans la stratégie et les opérations.",
+      offers: ["OFFRE A : Sustainable Market Entry", "OFFRE B : Circular Economy Programs"]
+    }
+  ]
+};
+
+export const AWAAYA_PROVEN_METRICS = [
+  { value: "20+", label: "Années d'expérience", desc: "En développement commercial et transformation d'organisations" },
+  { value: "13", label: "Marchés africains", desc: "Couverts en Afrique de l'Ouest et du Centre" },
+  { value: "30 M€+", label: "Opportunités commerciales", desc: "Influencées en Afrique de l'Ouest et Centrale" },
+  { value: "5", label: "Programmes d'économie circulaire", desc: "Conçus et pilotés avec succès pour industriels et institutions" },
+  { value: "100+", label: "Dirigeants et décideurs", desc: "Accompagnés dans leurs enjeux de transformation" },
+  { value: "2025", label: "Swedish Institute", desc: "Leadership for Sustainability — Programme Exécutif Global" }
+];
+
+export const AWAAYA_RESULTS = [
+  {
+    client: "MTN",
+    scope: "8 Filiales africaines",
+    figure: "2,3 M$ / an",
+    summary: "Revenus annuels générés sur des projets logiciels et services managés, avec gestion du P&L."
+  },
+  {
+    client: "ORANGE",
+    scope: "13 Filiales régionales",
+    figure: "1,2 M€",
+    summary: "Contrat d'infrastructure data center, plus des contrats de support avec SLA rigoureux."
+  },
+  {
+    client: "Cybersécurité",
+    scope: "Afrique de l'Ouest",
+    figure: "2,0 M€",
+    summary: "Projet de cybersécurité analytique, avec contrat de support de 3 ans inclus."
+  },
+  {
+    client: "Durabilité — NT Consulting",
+    scope: "Industrie & Collectivités",
+    figure: "5+ Programmes",
+    summary: "Programmes d'économie circulaire : flux de matières, déchets valorisés, économies et certification."
+  }
+];
+
+export const AWAAYA_TARGET_MARKETS = {
+  local: {
+    title: "Marchés Local & Régional",
+    items: [
+      "Industriels et entreprises de production",
+      "Entreprises exportatrices vers l’Europe",
+      "Opérateurs télécoms, banques et grands comptes"
+    ]
+  },
+  international: {
+    title: "Marchés Internationaux",
+    items: [
+      "Éditeurs, fintechs et cybersécurité",
+      "Groupes européens, indiens et moyen-orientaux",
+      "Bailleurs et institutions de développement"
+    ]
+  }
+};
+
+export const AWAAYA_ONBOARDING_PROCESS = [
+  {
+    period: "Semaines 1 à 2",
+    step: "Diagnostic gratuit de 45 minutes",
+    description: "Entretien de cadrage stratégique avec Nelly Touali pour clarifier vos priorités d'expansion ou de durabilité."
+  },
+  {
+    period: "Semaines 3 à 6",
+    step: "Proposition et périmètre de mission",
+    description: "Coconstruction de la feuille de route, des livrables contractuels, du calendrier et des modalités d'intervention."
+  },
+  {
+    period: "Mois 2",
+    step: "Lancement et premiers résultats mesurables",
+    description: "Démarrage des actions terrain à Abidjan et dans la sous-région, reporting bimensuel et premiers closing."
+  }
+];
 
 export const AWAAYA_SERVICES: ServiceDetail[] = [
   // =========================================================

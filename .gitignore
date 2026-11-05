@@ -26,6 +26,11 @@ Thumbs.db
 # TypeScript cache
 *.tsbuildinfo
 
+# Office / Presentations
+*.pptx
+*.ppt
+*.docx
+
 # SQLite databases
 *.db
 *.db-journal
