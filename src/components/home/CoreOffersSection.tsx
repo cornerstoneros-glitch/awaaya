@@ -17,7 +17,6 @@ import {
   AWAAYA_CORE_OFFERS, 
   AWAAYA_VALUE_ENGINES, 
   AWAAYA_PROVEN_METRICS, 
-  AWAAYA_RESULTS, 
   AWAAYA_TARGET_MARKETS, 
   AWAAYA_ONBOARDING_PROCESS 
 } from "@/data/services";
@@ -231,54 +230,6 @@ export function CoreOffersSection() {
                   </div>
                 </div>
 
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* ========================================================= */}
-        {/* SLIDE 6 : RÉSULTATS OBTENUS (RÉFÉRENCES RÉELLES DU DOCUMENT) */}
-        {/* ========================================================= */}
-        <div className="space-y-8 pt-6 border-t border-gray-200">
-          <div className="text-center max-w-3xl mx-auto space-y-2">
-            <span className="text-xs font-semibold text-[#1B4332]">
-              Historique Opérationnel & Impact Chiffré
-            </span>
-            <h2 className="text-2xl sm:text-3xl font-heading font-bold text-gray-900 tracking-tight">
-              Résultats obtenus par nos équipes
-            </h2>
-            <p className="text-xs sm:text-sm text-gray-600">
-              Des réalisations concrètes sur des comptes stratégiques régionaux et des programmes complexes en Afrique.
-            </p>
-          </div>
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {AWAAYA_RESULTS.map((res, idx) => (
-              <div 
-                key={idx}
-                className="bg-white rounded-xl p-6 border border-gray-200 shadow-xs flex flex-col justify-between space-y-4 hover:border-[#1B4332] transition-colors"
-              >
-                <div className="space-y-2">
-                  <div className="flex items-center justify-between">
-                    <span className="text-xs font-semibold text-gray-500">
-                      {res.scope}
-                    </span>
-                    <span className="w-2 h-2 rounded-full bg-emerald-500" />
-                  </div>
-                  <h3 className="text-sm font-bold text-gray-900 font-heading">
-                    {res.client}
-                  </h3>
-                  <div className="text-2xl font-mono font-bold text-[#1B4332] tabular-nums pt-1">
-                    {res.figure}
-                  </div>
-                  <p className="text-xs text-gray-600 leading-relaxed font-normal pt-1">
-                    {res.summary}
-                  </p>
-                </div>
-                <div className="pt-3 border-t border-gray-100 flex items-center justify-between text-[11px] text-gray-500 font-medium">
-                  <span>Vérifié en comité</span>
-                  <ShieldCheck className="w-3.5 h-3.5 text-[#1B4332]" />
-                </div>
               </div>
             ))}
           </div>
