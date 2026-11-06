@@ -129,9 +129,9 @@ export default function HomePage() {
       <SectorsGrid />
 
       {/* 8. BANNIÈRE INSTITUTIONNELLE FINALE (VERT FORÊT PROFOND) */}
-      <section className="bg-gradient-to-br from-[#1B4332] to-[#0F281E] text-white py-24 relative overflow-hidden" style={{ backgroundColor: "#0F281E" }}>
+      <section className="bg-[#0F281E] text-white py-24 relative overflow-hidden">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 space-y-8">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white text-xs font-bold uppercase tracking-widest">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#143527] border border-white/20 text-white text-xs font-semibold uppercase tracking-wider">
             <ShieldCheck className="w-4 h-4 text-emerald-300" />
             <span>Cabinet Référent Abidjan · Côte d'Ivoire</span>
           </div>
@@ -140,14 +140,14 @@ export default function HomePage() {
             Prêt à accélérer votre croissance ou réussir votre transition ESG ?
           </h2>
 
-          <p className="text-gray-100 text-base sm:text-xl max-w-2xl mx-auto leading-relaxed">
+          <p className="text-gray-200 text-base sm:text-lg max-w-2xl mx-auto leading-relaxed">
             Rencontrez nos associés et directeurs de mission à Abidjan pour un entretien de cadrage stratégique confidentiel et sans engagement.
           </p>
 
           <div className="flex flex-wrap justify-center items-center gap-4 pt-4">
             <Link
               href="/contact"
-              className="inline-flex items-center gap-3 bg-white hover:bg-gray-100 text-[#0F281E] font-extrabold px-8 py-4 rounded-xl text-base sm:text-lg transition-all shadow-2xl transform hover:-translate-y-0.5"
+              className="inline-flex items-center gap-3 bg-white hover:bg-gray-100 text-[#0F281E] font-bold px-8 py-4 rounded-xl text-base sm:text-lg transition-all shadow-md transform hover:-translate-y-0.5"
             >
               <Calendar className="w-5 h-5 text-[#0F281E]" />
               <span>Prendre rendez-vous avec un associé</span>
@@ -156,7 +156,7 @@ export default function HomePage() {
 
             <Link
               href="/diagnostic"
-              className="inline-flex items-center gap-2.5 bg-white/10 hover:bg-white/20 text-white font-semibold px-8 py-4 rounded-xl backdrop-blur-md border border-white/25 text-base sm:text-lg transition-all"
+              className="inline-flex items-center gap-2.5 bg-[#143527] hover:bg-[#1B4332] text-white font-medium px-8 py-4 rounded-xl border border-white/25 text-base sm:text-lg transition-all"
             >
               <span>Demander un diagnostic flash</span>
             </Link>

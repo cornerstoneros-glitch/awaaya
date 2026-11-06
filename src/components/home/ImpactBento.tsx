@@ -24,9 +24,9 @@ export function ImpactBento() {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
           
           {/* CARTE 1 (5 col) : ANCRAGE VERT FORÊT PROFOND (TEXTE BLANC NET) */}
-          <div className="md:col-span-5 bg-gradient-to-br from-awaaya-forest to-awaaya-forestDark text-white p-7 sm:p-9 rounded-xl relative overflow-hidden flex flex-col justify-between shadow-sm group">
+          <div className="md:col-span-5 bg-[#0F281E] border border-[#1B4332] text-white p-7 sm:p-9 rounded-xl relative overflow-hidden flex flex-col justify-between shadow-sm group">
             <div className="relative z-10 space-y-4">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/15 backdrop-blur-md border border-white/20 text-white text-xs font-medium">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-white/20 text-white text-xs font-medium">
                 <MapPin className="w-3.5 h-3.5 text-white" />
                 <span>Cocody Riviera Bonoumin · Abidjan</span>
               </div>

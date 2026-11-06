@@ -58,14 +58,14 @@ export default function DiagnosticRequestPage() {
   return (
     <div className="min-h-screen bg-awaaya-light pb-24">
       {/* HEADER AVEC ILLUSTRATION EXÉCUTIVE AFRICAINE */}
-      <section className="bg-gradient-to-r from-awaaya-forest to-awaaya-forestDark text-white py-16 sm:py-20 relative overflow-hidden">
+      <section className="bg-[#0F281E] border-b border-[#1B4332] text-white py-16 sm:py-20 relative overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
             src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?q=85&w=1600&auto=format&fit=crop" 
             alt="Cadrage stratégique AWAAYA" 
-            className="w-full h-full object-cover opacity-20 mix-blend-overlay"
+            className="w-full h-full object-cover opacity-15"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-awaaya-forest/95 via-awaaya-forest/90 to-awaaya-forestDark/95" />
+          <div className="absolute inset-0 bg-[#0F281E]/80" />
         </div>
         <div className="max-w-4xl mx-auto px-4 text-center relative z-10 space-y-3">
           <span className="inline-block px-3.5 py-1.5 rounded-full bg-white/10 border border-white/20 text-xs font-bold uppercase tracking-widest text-emerald-300">

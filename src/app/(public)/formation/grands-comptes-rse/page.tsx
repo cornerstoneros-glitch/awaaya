@@ -33,14 +33,14 @@ export default function GrandsComptesRseFormationPage() {
       {/* ========================================================= */}
       {/* HERO BANNER EXÉCUTIF */}
       {/* ========================================================= */}
-      <section className="bg-gradient-to-r from-awaaya-forest to-awaaya-forestDark text-white py-20 sm:py-24 relative overflow-hidden">
+      <section className="bg-[#0F281E] border-b border-[#1B4332] text-white py-20 sm:py-24 relative overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
             src="https://images.unsplash.com/photo-1531482615713-2afd69097998?q=85&w=1600&auto=format&fit=crop" 
             alt="Formation et masterclass managériale AWAAYA" 
-            className="w-full h-full object-cover opacity-20 mix-blend-overlay"
+            className="w-full h-full object-cover opacity-15"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-awaaya-forest/95 via-awaaya-forest/90 to-awaaya-forestDark/95" />
+          <div className="absolute inset-0 bg-[#0F281E]/80" />
         </div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-6">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-white/20 text-xs font-bold text-gray-200 uppercase tracking-widest">
@@ -277,7 +277,7 @@ export default function GrandsComptesRseFormationPage() {
       {/* BANNIÈRE DE CONVERSION */}
       {/* ========================================================= */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-20">
-        <div className="bg-gradient-to-r from-awaaya-forest to-awaaya-forestDark rounded-3xl p-8 sm:p-12 text-white shadow-xl flex flex-col md:flex-row items-center justify-between gap-8">
+        <div className="bg-[#0F281E] border border-[#1B4332] rounded-2xl p-8 sm:p-12 text-white shadow-sm flex flex-col md:flex-row items-center justify-between gap-8">
           <div className="space-y-3 max-w-2xl">
             <span className="text-xs font-extrabold uppercase text-emerald-300 tracking-wider">
               Besoin de former vos équipes ou d'organiser une session sur-mesure ?

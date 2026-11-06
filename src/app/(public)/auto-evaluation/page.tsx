@@ -273,14 +273,14 @@ function AutoEvaluationContent() {
       {/* ========================================================= */}
       {/* BANNIÈRE HAUTE VERT FORÊT ILLUSTRÉE */}
       {/* ========================================================= */}
-      <section className="bg-gradient-to-r from-awaaya-forest to-awaaya-forestDark text-white py-16 sm:py-20 relative overflow-hidden">
+      <section className="bg-[#0F281E] border-b border-[#1B4332] text-white py-16 sm:py-20 relative overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
             src="https://images.unsplash.com/photo-1573497491765-dccce02b29df?q=85&w=1600&auto=format&fit=crop" 
             alt="Auto-évaluation stratégique AWAAYA" 
-            className="w-full h-full object-cover opacity-20 mix-blend-overlay"
+            className="w-full h-full object-cover opacity-15"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-awaaya-forest/95 via-awaaya-forest/90 to-awaaya-forestDark/95" />
+          <div className="absolute inset-0 bg-[#0F281E]/80" />
         </div>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 space-y-4">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-white/20 text-xs font-bold text-gray-200 uppercase tracking-widest">
@@ -296,7 +296,7 @@ function AutoEvaluationContent() {
 
           {/* SÉLECTEUR DU TYPE DE TEST RESPONSIVE */}
           <div className="pt-4 flex justify-center">
-            <div className="inline-flex flex-col sm:flex-row p-1.5 rounded-2xl bg-white/15 border border-white/25 backdrop-blur-xs gap-2 w-full sm:w-auto">
+            <div className="inline-flex flex-col sm:flex-row p-1.5 rounded-2xl bg-white/10 border border-white/20 gap-2 w-full sm:w-auto">
               <button
                 type="button"
                 onClick={() => handleReset("rse")}

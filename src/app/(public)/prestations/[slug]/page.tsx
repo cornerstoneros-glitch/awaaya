@@ -58,14 +58,14 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
       {/* ========================================================= */}
       {/* HEADER DE LA PRESTATION */}
       {/* ========================================================= */}
-      <section className="bg-gradient-to-r from-awaaya-forest to-awaaya-forestDark text-white py-16 sm:py-20 relative overflow-hidden">
+      <section className="bg-[#0F281E] border-b border-[#1B4332] text-white py-16 sm:py-20 relative overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
             src={heroImage} 
             alt={service.title} 
-            className="w-full h-full object-cover opacity-15 mix-blend-overlay"
+            className="w-full h-full object-cover opacity-15"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-awaaya-forest/95 via-awaaya-forest/90 to-awaaya-forestDark/95" />
+          <div className="absolute inset-0 bg-[#0F281E]/80" />
         </div>
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-4">
           <div className="flex items-center gap-2 flex-wrap">
@@ -230,8 +230,8 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
             </ul>
           </div>
 
-          <div className="bg-gradient-to-br from-awaaya-forest to-awaaya-forestDark text-white p-6 sm:p-7 rounded-3xl shadow-md text-center space-y-4">
-            <span className="text-[10px] font-mono font-bold px-2.5 py-1 rounded-full bg-white/20 text-white uppercase tracking-wider inline-block">
+          <div className="bg-[#0F281E] border border-[#1B4332] text-white p-6 sm:p-7 rounded-2xl shadow-sm text-center space-y-4">
+            <span className="text-[10px] font-mono font-bold px-2.5 py-1 rounded-full bg-white/10 text-white uppercase tracking-wider inline-block">
               Accompagnement Sur-Mesure
             </span>
             <h3 className="text-xl font-heading font-extrabold text-white">

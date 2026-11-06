@@ -124,13 +124,13 @@ export function InteractivePillars() {
         {/* ========================================================= */}
         {/* BANDEAU RECAPITULATIF DU PILIER (AVEC VISUEL AFRICAIN) */}
         {/* ========================================================= */}
-        <div className="bg-gradient-to-r from-awaaya-forest to-awaaya-forestDark rounded-3xl text-white shadow-md mb-8 grid md:grid-cols-12 overflow-hidden border border-white/10">
+        <div className="bg-[#0F281E] rounded-2xl text-white shadow-sm mb-8 grid md:grid-cols-12 overflow-hidden border border-[#1B4332]">
           <div className="p-6 sm:p-8 md:col-span-8 space-y-3 flex flex-col justify-center relative z-10">
             <div className="flex items-center gap-3">
-              <span className="text-xs font-mono font-bold px-2.5 py-1 rounded-md bg-white/15 border border-white/20 text-white">
+              <span className="text-xs font-mono font-bold px-2.5 py-1 rounded-md bg-white/10 border border-white/20 text-white">
                 Pilier {currentMeta.number}
               </span>
-              <span className="text-xs uppercase font-extrabold tracking-wider text-gray-200">
+              <span className="text-xs uppercase font-extrabold tracking-wider text-gray-300">
                 {currentMeta.badgeText}
               </span>
             </div>
@@ -143,10 +143,10 @@ export function InteractivePillars() {
             <div className="pt-2">
               <Link
                 href={`/diagnostic?pilier=${currentMeta.key.toLowerCase()}`}
-                className="inline-flex items-center gap-2 bg-white text-awaaya-forestDark hover:bg-gray-100 font-extrabold text-xs sm:text-sm px-5 py-3 rounded-xl transition-all shadow-md"
+                className="inline-flex items-center gap-2 bg-white text-[#0F281E] hover:bg-gray-100 font-extrabold text-xs sm:text-sm px-5 py-3 rounded-xl transition-all shadow-sm"
               >
                 <span>Demander un cadrage {currentMeta.shortTitle}</span>
-                <ArrowRight className="w-4 h-4 text-awaaya-forestDark" />
+                <ArrowRight className="w-4 h-4 text-[#0F281E]" />
               </Link>
             </div>
           </div>
@@ -158,7 +158,7 @@ export function InteractivePillars() {
               className="absolute inset-0 w-full h-full object-cover"
               loading="lazy"
             />
-            <div className="absolute inset-0 bg-gradient-to-t md:bg-gradient-to-r from-awaaya-forest via-awaaya-forest/40 to-transparent" />
+            <div className="absolute inset-0 bg-[#0F281E]/75" />
           </div>
         </div>
 
@@ -241,8 +241,8 @@ export function InteractivePillars() {
         {/* MODAL RAPIDE DE LA DÉMARCHE (ZÉRO DÉFORMATION DU LAYOUT) */}
         {/* ========================================================= */}
         {selectedServiceForModal && (
-          <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 backdrop-blur-sm animate-in fade-in duration-200">
-            <div className="bg-white rounded-3xl max-w-xl w-full p-6 sm:p-8 shadow-2xl border border-gray-200 relative max-h-[90vh] overflow-y-auto space-y-6">
+          <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/60 animate-in fade-in duration-200">
+            <div className="bg-white rounded-2xl max-w-xl w-full p-6 sm:p-8 shadow-xl border border-gray-200 relative max-h-[90vh] overflow-y-auto space-y-6">
               <div className="flex items-start justify-between gap-4">
                 <div>
                   <span className="text-[11px] font-extrabold uppercase text-awaaya-forest tracking-wider">

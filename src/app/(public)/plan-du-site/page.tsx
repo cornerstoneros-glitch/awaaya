@@ -31,14 +31,14 @@ export default function PlanDuSitePage() {
       {/* ========================================================= */}
       {/* BANNIÈRE HAUTE VERT FORÊT ILLUSTRÉE */}
       {/* ========================================================= */}
-      <section className="bg-gradient-to-r from-awaaya-forest to-awaaya-forestDark text-white py-16 sm:py-20 relative overflow-hidden">
+      <section className="bg-[#0F281E] border-b border-[#1B4332] text-white py-16 sm:py-20 relative overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
             src="https://images.unsplash.com/photo-1531482615713-2afd69097998?q=85&w=1600&auto=format&fit=crop" 
             alt="Arborescence du cabinet AWAAYA" 
-            className="w-full h-full object-cover opacity-15 mix-blend-overlay"
+            className="w-full h-full object-cover opacity-15"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-awaaya-forest/95 via-awaaya-forest/90 to-awaaya-forestDark/95" />
+          <div className="absolute inset-0 bg-[#0F281E]/80" />
         </div>
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 border border-white/20 text-xs font-bold text-gray-200 uppercase tracking-widest mb-4">

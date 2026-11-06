@@ -40,14 +40,14 @@ export default function AboutPage() {
       {/* ========================================================= */}
       {/* EN-TÊTE VERT FORÊT INSTITUTIONNEL */}
       {/* ========================================================= */}
-      <section className="bg-gradient-to-r from-awaaya-forest to-awaaya-forestDark text-white py-20 relative overflow-hidden">
+      <section className="bg-[#0F281E] border-b border-[#1B4332] text-white py-20 relative overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
             src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?q=85&w=1600&auto=format&fit=crop" 
             alt="Équipe de direction AWAAYA" 
-            className="w-full h-full object-cover opacity-15 mix-blend-overlay"
+            className="w-full h-full object-cover opacity-15"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-awaaya-forest/95 via-awaaya-forest/90 to-awaaya-forestDark/95" />
+          <div className="absolute inset-0 bg-[#0F281E]/80" />
         </div>
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 space-y-4">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-white/20 text-xs font-bold uppercase tracking-widest text-emerald-300">
@@ -228,11 +228,11 @@ export default function AboutPage() {
         <section id="nelly-touali" className="bg-white rounded-3xl border border-gray-200/90 shadow-md overflow-hidden">
           
           {/* EN-TÊTE DU DOSSIER EXÉCUTIF */}
-          <div className="bg-gradient-to-r from-[#1B4332] to-[#0F281E] text-white p-8 sm:p-12 relative overflow-hidden">
+          <div className="bg-[#0F281E] border-b border-[#1B4332] text-white p-8 sm:p-12 relative overflow-hidden">
             <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-6 relative z-10">
               
               <div className="flex items-center gap-5 sm:gap-6">
-                <div className="relative w-24 h-24 sm:w-28 sm:h-28 rounded-3xl overflow-hidden shadow-2xl shrink-0 border-2 border-white/30 bg-awaaya-forest">
+                <div className="relative w-24 h-24 sm:w-28 sm:h-28 rounded-2xl overflow-hidden shadow-xl shrink-0 border-2 border-white/30 bg-[#1B4332]">
                   <img 
                     src="/images/team/nelly-touali.jpg" 
                     alt="Nelly TOUALI - Executive Advisor" 
@@ -257,7 +257,7 @@ export default function AboutPage() {
               </div>
 
               {/* COORDONNÉES DIRECTES */}
-              <div className="flex flex-col gap-2 text-xs bg-white/10 p-4 rounded-2xl border border-white/15 backdrop-blur-xs w-full md:w-auto shrink-0">
+              <div className="flex flex-col gap-2 text-xs bg-white/10 p-4 rounded-xl border border-white/15 w-full md:w-auto shrink-0">
                 <span className="flex items-center gap-2 text-gray-200">
                   <MapPin className="w-3.5 h-3.5 text-emerald-300 shrink-0" />
                   <span>Abidjan, Côte d'Ivoire</span>
@@ -773,7 +773,7 @@ export default function AboutPage() {
         {/* ========================================================= */}
         {/* BANNIÈRE DE CONTACT & LOCALISATION */}
         {/* ========================================================= */}
-        <section className="bg-gradient-to-r from-awaaya-forest to-awaaya-forestDark text-white p-8 sm:p-12 rounded-3xl text-center space-y-6 shadow-md">
+        <section className="bg-[#0F281E] border border-[#1B4332] text-white p-8 sm:p-12 rounded-2xl text-center space-y-6 shadow-sm">
           <div className="max-w-2xl mx-auto space-y-3">
             <h2 className="text-2xl sm:text-3xl font-heading font-extrabold text-white">
               Mobilisez notre réseau de consultants experts

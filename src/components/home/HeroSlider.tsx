@@ -195,12 +195,12 @@ export function HeroSlider() {
             
             {/* Badge Titre / Thématique B2B */}
             <div className="flex flex-wrap items-center gap-2">
-              <div className="inline-flex items-center gap-2 px-3.5 sm:px-4 py-1.5 sm:py-2 rounded-full bg-black/45 backdrop-blur-md border border-white/20 text-white text-xs font-medium tracking-normal shadow-md">
+              <div className="inline-flex items-center gap-2 px-3.5 sm:px-4 py-1.5 sm:py-2 rounded-full bg-[#143527] border border-white/20 text-white text-xs font-semibold tracking-normal shadow-sm">
                 <Briefcase className="w-3.5 sm:w-4 h-3.5 sm:h-4 text-emerald-300 shrink-0" />
                 <span className="truncate max-w-[280px] sm:max-w-none">{current.location}</span>
               </div>
               {/* Badge métrique visible uniquement sur mobile & tablette */}
-              <div className="lg:hidden inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white/20 backdrop-blur-md border border-white/25 text-white text-xs font-semibold">
+              <div className="lg:hidden inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#1B4332] border border-white/25 text-white text-xs font-semibold">
                 <TrendingUp className="w-3.5 h-3.5 text-emerald-300" />
                 <span className="font-mono tabular-nums">{current.metricValue}</span>
                 <span>·</span>
@@ -209,7 +209,7 @@ export function HeroSlider() {
             </div>
 
             {/* Titre Principal qui change avec le Slide */}
-            <h1 className="text-3xl sm:text-5xl lg:text-6xl xl:text-7xl font-heading font-extrabold tracking-tight leading-[1.15] sm:leading-[1.1] drop-shadow-md text-white min-h-0 sm:min-h-[150px] lg:min-h-[180px] flex flex-col justify-center">
+            <h1 className="text-3xl sm:text-5xl lg:text-6xl xl:text-7xl font-heading font-extrabold tracking-tight leading-[1.15] sm:leading-[1.1] text-white min-h-0 sm:min-h-[150px] lg:min-h-[180px] flex flex-col justify-center">
               <span>{current.headlinePrefix}</span>
               <span>
                 <span className="text-white underline decoration-emerald-400/60 decoration-2 underline-offset-8">
@@ -220,7 +220,7 @@ export function HeroSlider() {
             </h1>
 
             {/* Descriptif spécifique au Slide */}
-            <p className="text-sm sm:text-lg lg:text-xl text-gray-100 font-normal leading-relaxed max-w-2xl drop-shadow-[0_2px_4px_rgba(0,0,0,0.6)] min-h-0 sm:min-h-[60px]">
+            <p className="text-sm sm:text-lg lg:text-xl text-gray-200 font-normal leading-relaxed max-w-2xl min-h-0 sm:min-h-[60px]">
               {current.description}
             </p>
 
@@ -228,14 +228,14 @@ export function HeroSlider() {
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4 pt-2 sm:pt-4">
               <Link
                 href={current.primaryCtaLink}
-                className="bg-white hover:bg-gray-100 text-[#0F281E] font-extrabold px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl transition-all shadow-2xl flex items-center justify-center gap-2.5 text-sm sm:text-base transform hover:-translate-y-0.5 text-center"
+                className="bg-white hover:bg-gray-100 text-[#0F281E] font-bold px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl transition-all shadow-md flex items-center justify-center gap-2.5 text-sm sm:text-base transform hover:-translate-y-0.5 text-center"
               >
                 <span>{current.primaryCtaLabel}</span>
                 <ArrowRight className="w-4 sm:w-5 h-4 sm:h-5 text-[#0F281E]" />
               </Link>
               <Link
                 href={current.secondaryCtaLink}
-                className="bg-black/45 hover:bg-black/60 text-white font-medium px-5 sm:px-7 py-3.5 sm:py-4 rounded-xl backdrop-blur-md transition-all border border-white/30 text-sm sm:text-base flex items-center justify-center gap-2.5 shadow-xl text-center"
+                className="bg-[#143527] hover:bg-[#1B4332] text-white font-medium px-5 sm:px-7 py-3.5 sm:py-4 rounded-xl transition-all border border-white/25 text-sm sm:text-base flex items-center justify-center gap-2.5 shadow-sm text-center"
               >
                 <BarChart3 className="w-4 sm:w-5 h-4 sm:h-5 text-emerald-300" />
                 <span>{current.secondaryCtaLabel}</span>
@@ -245,7 +245,7 @@ export function HeroSlider() {
 
           {/* CARTOUCHE D'IMPACT DYNAMIQUE */}
           <div key={`cartouche-${currentSlide}`} className="lg:col-span-4 hidden lg:flex flex-col justify-end items-end space-y-4 animate-in fade-in duration-500 ease-out">
-            <div className="bg-white/95 backdrop-blur-md text-gray-900 p-6 rounded-xl shadow-lg border border-white/60 max-w-sm w-full">
+            <div className="bg-white text-gray-900 p-6 rounded-xl shadow-lg border border-gray-200 max-w-sm w-full">
               <div className="flex items-center gap-3 mb-3">
                 <div className="w-11 h-11 rounded-lg bg-[#EBF5EE] text-[#1B4332] flex items-center justify-center shrink-0 font-bold">
                   <TrendingUp className="w-5 h-5" />
@@ -265,12 +265,12 @@ export function HeroSlider() {
             </div>
 
             {/* Titre du slide avec badge thématique */}
-            <div className="bg-black/65 backdrop-blur-md border border-white/20 px-5 py-3 rounded-xl text-right max-w-sm w-full shadow-md">
-              <p className="text-xs font-medium text-emerald-300 flex items-center justify-end gap-1.5">
+            <div className="bg-[#0A1F17] border border-white/15 px-5 py-3 rounded-xl text-right max-w-sm w-full shadow-sm">
+              <p className="text-xs font-semibold text-emerald-300 flex items-center justify-end gap-1.5">
                 <Target className="w-3.5 h-3.5" />
                 <span>{current.badgeLabel}</span>
               </p>
-              <p className="text-xs text-white font-medium truncate mt-0.5">{current.tagline}</p>
+              <p className="text-xs text-gray-200 font-medium truncate mt-0.5">{current.tagline}</p>
             </div>
           </div>
 
@@ -280,8 +280,8 @@ export function HeroSlider() {
         {/* CONTRÔLES DU SLIDER (DOTS, NUMÉROTATION, FLÈCHES) */}
         {/* ========================================================= */}
         <div className="mt-8 sm:mt-14 pt-4 sm:pt-6 border-t border-white/20 flex flex-wrap sm:flex-nowrap items-center justify-between gap-3">
-          {/* Indicateurs Dots avec progression visuelle (6 slides) */}
-          <div className="flex items-center gap-1.5 sm:gap-2.5 bg-black/45 backdrop-blur-md px-3 sm:px-4 py-1.5 sm:py-2 rounded-full border border-white/15 max-w-full overflow-x-auto">
+          {/* Indicateurs Dots avec progression visuelle (5 slides) */}
+          <div className="flex items-center gap-1.5 sm:gap-2.5 bg-[#143527] px-3 sm:px-4 py-1.5 sm:py-2 rounded-full border border-white/15 max-w-full overflow-x-auto">
             {HERO_SLIDES.map((slide, idx) => (
               <button
                 key={slide.id}
@@ -306,14 +306,14 @@ export function HeroSlider() {
             <button
               onClick={goToPrev}
               aria-label="Slide précédent"
-              className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-black/45 hover:bg-black/65 backdrop-blur-md border border-white/25 flex items-center justify-center text-white transition-all hover:scale-105 shadow-xl"
+              className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-[#143527] hover:bg-[#1B4332] border border-white/25 flex items-center justify-center text-white transition-all shadow-md"
             >
               <ChevronLeft className="w-5 h-5 sm:w-6 sm:h-6" />
             </button>
             <button
               onClick={goToNext}
               aria-label="Slide suivant"
-              className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-black/45 hover:bg-black/65 backdrop-blur-md border border-white/25 flex items-center justify-center text-white transition-all hover:scale-105 shadow-xl"
+              className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-[#143527] hover:bg-[#1B4332] border border-white/25 flex items-center justify-center text-white transition-all shadow-md"
             >
               <ChevronRight className="w-5 h-5 sm:w-6 sm:h-6" />
             </button>

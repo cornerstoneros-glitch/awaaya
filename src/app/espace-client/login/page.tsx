@@ -77,7 +77,7 @@ export default function LoginPage() {
         {/* ========================================================= */}
         {/* BANDEAU MODE TEST / ACCÈS RAPIDE DÉMO */}
         {/* ========================================================= */}
-        <div className="bg-gradient-to-r from-awaaya-forest to-awaaya-forestDark rounded-3xl p-6 sm:p-7 text-white shadow-lg relative overflow-hidden">
+        <div className="bg-[#0F281E] border border-[#1B4332] rounded-2xl p-6 sm:p-7 text-white shadow-sm relative overflow-hidden">
           <div className="relative z-10 space-y-4">
             <div className="flex items-center justify-between gap-4 flex-wrap">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/20 border border-white/30 text-xs font-bold text-white uppercase tracking-wider">

@@ -138,16 +138,15 @@ export default function CaseStudiesPage() {
       {/* BANNIÈRE HAUTE VERT FORÊT ILLUSTRÉE */}
       {/* ========================================================= */}
       <section 
-        className="bg-[#0F281E] bg-gradient-to-r from-[#1B4332] to-[#0F281E] text-white py-16 sm:py-20 relative overflow-hidden"
-        style={{ backgroundColor: "#0F281E" }}
+        className="bg-[#0F281E] border-b border-[#1B4332] text-white py-16 sm:py-20 relative overflow-hidden"
       >
         <div className="absolute inset-0 z-0">
           <img 
             src="https://images.unsplash.com/photo-1531482615713-2afd69097998?q=85&w=1600&auto=format&fit=crop" 
             alt="Études de cas et impact AWAAYA" 
-            className="w-full h-full object-cover opacity-20 mix-blend-overlay"
+            className="w-full h-full object-cover opacity-15"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#1B4332]/95 via-[#0F281E]/90 to-[#0F281E]/95" />
+          <div className="absolute inset-0 bg-[#0F281E]/80" />
         </div>
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center space-y-4">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/10 border border-white/20 text-xs font-bold text-gray-100 uppercase tracking-widest">
@@ -165,7 +164,7 @@ export default function CaseStudiesPage() {
 
           {/* BASCULE ONGLET PRINCIPAL */}
           <div className="pt-4 flex justify-center">
-            <div className="inline-flex p-1 rounded-2xl bg-black/30 border border-white/20 gap-1.5 backdrop-blur-xs">
+            <div className="inline-flex p-1 rounded-2xl bg-black/40 border border-white/20 gap-1.5">
               <button
                 type="button"
                 onClick={() => setActiveTab("CAS")}
@@ -480,7 +479,7 @@ export default function CaseStudiesPage() {
       {/* MODALE DE TÉLÉCHARGEMENT DU LIVRE BLANC */}
       {/* ========================================================= */}
       {downloadModalPub && (
-        <div className="fixed inset-0 z-50 bg-black/60 backdrop-blur-xs flex items-center justify-center p-4">
+        <div className="fixed inset-0 z-50 bg-black/60 flex items-center justify-center p-4">
           <div className="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl relative space-y-5 animate-in fade-in zoom-in-95 duration-200">
             <div className="flex justify-between items-start">
               <div>

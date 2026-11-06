@@ -422,7 +422,7 @@ export default function BackOfficePage() {
 
             {/* MODALE DÉTAILS D'UN LEAD */}
             {selectedLead && (
-              <div className="fixed inset-0 z-50 bg-black/50 backdrop-blur-xs flex items-center justify-center p-4">
+              <div className="fixed inset-0 z-50 bg-black/60 flex items-center justify-center p-4">
                 <div className="bg-white rounded-xl max-w-xl w-full p-6 sm:p-8 shadow-xl relative space-y-5 border border-gray-200 animate-in fade-in zoom-in-95">
                   <div className="flex justify-between items-start">
                     <div>
