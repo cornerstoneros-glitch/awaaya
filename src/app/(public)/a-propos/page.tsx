@@ -306,7 +306,7 @@ export default function AboutPage() {
                   Mon parcours s'est construit à l'intersection du développement commercial, de la transformation digitale, de la gouvernance des organisations et, plus récemment, de la transformation durable. Cette double expérience me permet aujourd'hui de concevoir des programmes qui créent simultanément de la valeur économique, renforcent les capacités organisationnelles et accélèrent la transition vers des modèles plus résilients.
                 </p>
                 <p>
-                  Fondatrice et Directrice Générale de <strong>NT Consulting</strong> (qui anime le cabinet AWAAYA et son réseau de consultants experts), je conseille les dirigeants dans la conception, le pilotage et l'exécution de transformations complexes en mobilisant les parties prenantes, les équipes métiers et les partenaires stratégiques autour d'une vision commune et d'objectifs mesurables.
+                  Fondatrice et Directrice Générale du cabinet <strong>AWAAYA</strong> (qui anime son réseau de consultants experts), je conseille les dirigeants dans la conception, le pilotage et l'exécution de transformations complexes en mobilisant les parties prenantes, les équipes métiers et les partenaires stratégiques autour d'une vision commune et d'objectifs mesurables.
                 </p>
               </div>
             </div>
@@ -576,7 +576,7 @@ export default function AboutPage() {
 
               <div className="space-y-4">
                 
-                {/* NT CONSULTING */}
+                {/* AWAAYA */}
                 <div className="p-6 rounded-2xl bg-white border-2 border-awaaya-forest shadow-xs space-y-3">
                   <div className="flex flex-wrap items-center justify-between gap-2">
                     <div>
@@ -584,7 +584,7 @@ export default function AboutPage() {
                         Cabinet de Conseil
                       </span>
                       <h4 className="font-heading font-black text-lg text-gray-900 mt-1">
-                        NT CONSULTING (Cabinet AWAAYA)
+                        Cabinet AWAAYA
                       </h4>
                       <p className="text-xs font-bold text-gray-600">Fondatrice & Directrice Générale</p>
                     </div>

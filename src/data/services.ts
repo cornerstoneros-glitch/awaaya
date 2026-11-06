@@ -182,7 +182,7 @@ export const AWAAYA_RESULTS = [
     summary: "Projet de cybersécurité analytique, avec contrat de support de 3 ans inclus."
   },
   {
-    client: "Durabilité — NT Consulting",
+    client: "Durabilité & Économie Circulaire",
     scope: "Industrie & Collectivités",
     figure: "5+ Programmes",
     summary: "Programmes d'économie circulaire : flux de matières, déchets valorisés, économies et certification."
